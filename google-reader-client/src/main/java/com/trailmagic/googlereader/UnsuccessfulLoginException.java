@@ -8,4 +8,8 @@ public class UnsuccessfulLoginException extends Exception {
     public UnsuccessfulLoginException(Exception e) {
         super(e);
     }
+
+    public UnsuccessfulLoginException(String message) {
+        super(message);
+    }
 }

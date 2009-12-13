@@ -1,6 +1,7 @@
 package com.trailmagic.googlereader;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
@@ -43,7 +44,7 @@ public class GoogleClientLogin {
         this.googlePassword = googlePassword;
     }
 
-    public String getAuthToken() throws UnsuccessfulLoginException {
+    public String getSidToken() throws UnsuccessfulLoginException {
         HttpPost post = new HttpPost("https://www.google.com/accounts/ClientLogin");
 
         Map<String, String> variables = new HashMap<String, String>();
@@ -60,21 +61,32 @@ public class GoogleClientLogin {
         }
 
         try {
+            log.debug("Contacting Google ClientLogin service");
             HttpResponse response = httpClient.execute(post);
             String responseBody = EntityUtils.toString(response.getEntity());
-            String authString = getAuthString(responseBody);
-            log.debug("Got auth token: {}", authString);
-            return authString;
+            switch (response.getStatusLine().getStatusCode()) {
+                case HttpStatus.SC_OK:
+                case HttpStatus.SC_MOVED_TEMPORARILY:
+                case HttpStatus.SC_SEE_OTHER:
+                    String authString = getSidString(responseBody);
+                    log.debug("Got successful SID string from ClientLogin");
+                    return authString;
+                default:
+                    log.error("Google ClientLogin returned an error status ([]).  Response: {}",
+                              response.getStatusLine().getStatusCode(), responseBody);
+                    throw new UnsuccessfulLoginException("Could not authenticate to Google ClientLogin service");
+
+            }
         } catch (IOException e) {
             throw new UnsuccessfulLoginException(e);
         }
     }
 
-    private String getAuthString(String responseBody) {
+    private String getSidString(String responseBody) throws UnsuccessfulLoginException {
         Pattern pattern = Pattern.compile("^SID=(.+?)$", Pattern.MULTILINE);
         Matcher matcher = pattern.matcher(responseBody);
         if (!matcher.find()) {
-            return null;
+            throw new UnsuccessfulLoginException("Could not find SID in response");
         }
         return matcher.group(1);
     }

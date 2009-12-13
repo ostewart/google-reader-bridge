@@ -41,7 +41,7 @@ public class GoogleReaderClient {
 
     public void init() throws IOException {
         try {
-            addGoogleCookie("SID", clientLogin.getAuthToken());
+            addGoogleCookie("SID", clientLogin.getSidToken());
             addGoogleCookie("T", getReaderToken());
         } catch (UnsuccessfulLoginException e) {
             throw new IllegalStateException("Couldn't get an auth token");
