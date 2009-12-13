@@ -1,0 +1,11 @@
+<package name="Google Reader Bridge"
+         description="Updates read articles to/from Google Reader"
+         version="1.0"
+         author="Oliver Stewart"
+         email="oliver@trailmagic.com">
+
+    <code class="com.trailmagic.blogbridge.googlereader.GoogleReaderBridgePlugin">
+        <property name="googlereader.user" value="oliver@trailmagic.com"/>
+    </code>
+
+</package>
