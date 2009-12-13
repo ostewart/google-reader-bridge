@@ -7,6 +7,13 @@ import org.apache.http.impl.cookie.BasicClientCookie;
 import org.apache.http.util.EntityUtils;
 import org.codehaus.jackson.map.DeserializationConfig;
 import org.codehaus.jackson.map.ObjectMapper;
+import org.jdom.Attribute;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.Text;
+import org.jdom.input.SAXBuilder;
+import org.jdom.xpath.XPath;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +22,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -25,7 +36,7 @@ import java.util.Map;
 public class GoogleReaderClient {
     private static final String SUBSCRIPTIONS_URL =
             "http://www.google.com/reader/api/0/subscription/list?output=json";
-    private Logger log = LoggerFactory.getLogger(GoogleReaderClient.class);
+    private static Logger log = LoggerFactory.getLogger(GoogleReaderClient.class);
     private static final String READ_TAG = "user/-/state/com.google/read";
     private static final String RECENTLY_READ_URL =
             "http://www.google.com/reader/atom/user/-/state/com.google/read";
@@ -68,12 +79,40 @@ public class GoogleReaderClient {
         }
     }
 
-    public Map<String,String> getFeedArticleIds(String feedUrl) throws IOException {
+    public Map<String, String> getFeedArticleIds(String feedUrl) throws IOException, JDOMException {
         HttpGet get = new HttpGet(FEED_BASE + feedUrl);
         get.getParams().setParameter("output", "json");
+        log.debug("Fetching Google article ID mappings for feed: {}", feedUrl);
         HttpResponse response = httpClient.execute(get);
-        log.debug("Feed response: {}", EntityUtils.toString(response.getEntity()));
-        return null;
+        log.debug("Got response for : {}, processing mappings", feedUrl);
+
+        Map<String, String> mappings = extractIdMapping(new InputStreamReader(response.getEntity().getContent()));
+        log.debug("Found {} mappings for feed: {}", mappings.size(), feedUrl);
+        return mappings;
+    }
+
+    @SuppressWarnings({"unchecked"})
+    Map<String, String> extractIdMapping(Reader content) throws JDOMException, IOException {
+        Map<String, String> mappings = new HashMap<String, String>();
+        SAXBuilder builder = new SAXBuilder();
+        Document doc = builder.build(content);
+
+        XPath xPath = atomXPath("//a:feed/a:entry");
+        for (Element entry : (List<Element>) xPath.selectNodes(doc)) {
+            Attribute originalId = (Attribute) atomXPath("a:id/@gr:original-id").selectSingleNode(entry);
+            Text googleId = (Text) atomXPath("a:id/text()").selectSingleNode(entry);
+            if (originalId != null && googleId != null) {
+                mappings.put(originalId.getValue(), googleId.getText());
+            }
+        }
+        return mappings;
+    }
+
+    private XPath atomXPath(String path) throws JDOMException {
+        XPath xPath = XPath.newInstance(path);
+        xPath.addNamespace("a", "http://www.w3.org/2005/Atom");
+        xPath.addNamespace("gr", "http://www.google.com/schemas/reader/atom/");
+        return xPath;
     }
 
     public String getReaderToken() throws IOException {
@@ -92,10 +131,15 @@ public class GoogleReaderClient {
         try {
             client.init();
             client.loadSubscriptions();
-            client.getFeedArticleIds("http://daringfireball.net/index.xml");
+            Map<String, String> map = client.getFeedArticleIds("http://daringfireball.net/index.xml");
+            for (String orig : map.keySet()) {
+                log.info("Found Mapping: {} : {}", orig, map.get(orig));
+            }
 
 
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JDOMException e) {
             e.printStackTrace();
         }
     }
