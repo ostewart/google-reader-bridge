@@ -109,6 +109,8 @@ public class GoogleReaderClientTest {
         };
 
         Mockito.verify(httpFactory).urlEncodedFormEntity(Arrays.asList(bodyParams));
+        Mockito.verify(httpClient, Mockito.times(1)).execute(post);
+        Mockito.verify(statusLine, Mockito.times(1)).getStatusCode();
     }
 
     @Test
