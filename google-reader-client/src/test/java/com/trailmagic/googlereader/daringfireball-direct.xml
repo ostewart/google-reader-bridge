@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Daring Fireball</title>
+<subtitle>Mac and web curmudgeonry/nerdery. By John Gruber.</subtitle>
+<link rel="alternate" type="text/html" href="http://daringfireball.net/" />
+<link rel="self" type="application/atom+xml" href="http://daringfireball.net/index.xml" />
+<id>http://daringfireball.net/feeds/combo</id>
+
+<updated>2009-12-13T19:11:10Z</updated><rights>Copyright © 2009, John Gruber</rights><entry>
+	<title>Photo of Google’s Nexus One</title>
+	<link rel="alternate" type="text/html" href="http://twitpic.com/tbdig" />
+	<link rel="shorturl" href="http://✪df.ws/eb4" />
+	<id>tag:daringfireball.net,2009:/linked//6.18544</id>
+	<published>2009-12-13T19:11:07Z</published>
+	<updated>2009-12-13T19:11:10Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Looks good. Note the lack of HTC branding. I&#8217;m unconvinced on the utility of trackball on a touchscreen device, but I&#8217;m willing to try it. The big advantage over the Droid: no hardware keyboard.</p>
+
+<div>
+<a  title="Permanent link to ‘Photo of Google&#8217;s Nexus One’"  href="http://daringfireball.net/linked/2009/12/13/nexus-photo">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>WSJ: ‘Google to Start Selling Own Phone Without Wireless Partner by Next Year’</title>
+	<link rel="alternate" type="text/html" href="http://online.wsj.com/article/SB10001424052748703757404574592530591075444.html" />
+	<link rel="shorturl" href="http://✪df.ws/eb3" />
+	<id>tag:daringfireball.net,2009:/linked//6.18543</id>
+	<published>2009-12-13T03:21:59Z</published>
+	<updated>2009-12-13T03:29:03Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Jessica E. Vascellaro, reporting for The Wall Street Journal (<a href="http://www.google.com/url?q=http://online.wsj.com/article/SB10001424052748703757404574592530591075444.html">link to get behind the WSJ paywall</a>):</p>
+
+<blockquote>
+  <p>Google Inc. has designed a cellphone it plans to sell directly to
+  consumers as soon as next year, according to people familiar with
+  the matter. The phone is called the Nexus One and is being
+  manufactured for Google by HTC Corp., these people said. It runs
+  Android, the operating system for mobile phones that Google
+  developed, they added. [&#8230;]</p>
+
+  <p>The Internet giant is taking a new, and potentially risky,
+  approach to selling the device. Rather than selling the phone
+  through a wireless carrier &#8212; the way the bulk of phones are sold in
+  the U.S. today &#8212; Google plans to sell the Nexus One itself
+  online. Users will have to buy cellular service for the device
+  separately.</p>
+</blockquote>
+
+<p>No word on pricing. As for the risks:</p>
+
+<blockquote>
+  <p>The move could alienate wireless carriers and handset makers that
+  offer Android phones and do not want to compete with Google.</p>
+
+</blockquote>
+
+<p>I&#8217;ll bet Motorola and Verizon are delighted.</p>
+
+<div>
+<a  title="Permanent link to ‘WSJ: &#8216;Google to Start Selling Own Phone Without Wireless Partner by Next Year&#8217;’"  href="http://daringfireball.net/linked/2009/12/12/wsj-google-phone">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>‘The Tortoise Lays on Its Back, Its Belly Baking in the Hot Sun, Beating Its Legs Trying to Turn Itself Over, but It Can’t, Not Without Your Help. But You’re Not Helping. Why Is That?’</title>
+	<link rel="alternate" type="text/html" href="http://en.wikipedia.org/wiki/Replicant" />
+	<link rel="shorturl" href="http://✪df.ws/eb2" />
+	<id>tag:daringfireball.net,2009:/linked//6.18542</id>
+	<published>2009-12-12T22:48:37Z</published>
+	<updated>2009-12-12T23:45:07Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>So the new Google Phone identifies itself as &#8220;Nexus One&#8221; <a href="http://daringfireball.net/linked/2009/12/12/gphone">in its user agent string</a>. <em>Nexus</em> is the brand name of the series of androids (a.k.a. <em>replicants</em>) in <em>Blade Runner</em> and Philip K. Dick&#8217;s novel <em><a href="http://www.amazon.com/exec/obidos/asin/0345404475/ref=nosim/daringfirebal-20">Do Androids Dream of Electric Sheep?</a></em>. The story concerns escaped Nexus-6 models; in the movie, you-know-who is a prototype Nexus-7.</p>
+
+<p><strong>Update:</strong> Sony calls their <a href="http://www.mobilemag.com/2009/11/18/custom-android-ui-named-sony-ericsson-nexus/">custom Android UI &#8220;Nexus&#8221;</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘&#8216;The Tortoise Lays on Its Back, Its Belly Baking in the Hot Sun, Beating Its Legs Trying to Turn Itself Over, but It Can’t, Not Without Your Help. But You’re Not Helping. Why Is That?&#8217;’"  href="http://daringfireball.net/linked/2009/12/12/nexus-one">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Google Coyly Acknowledges New Android Phones Given to Employees</title>
+	<link rel="alternate" type="text/html" href="http://googlemobile.blogspot.com/2009/12/android-dogfood-diet-for-holidays.html" />
+	<link rel="shorturl" href="http://✪df.ws/eb1" />
+	<id>tag:daringfireball.net,2009:/linked//6.18541</id>
+	<published>2009-12-12T20:21:51Z</published>
+	<updated>2009-12-12T20:21:51Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Google product management VP Mario Queiroz:</p>
+
+<blockquote>
+  <p>We recently came up with the concept of a mobile lab, which is a device that combines innovative hardware from a partner with software that runs on Android to experiment with new mobile features and capabilities, and we shared this device with Google employees across the globe.</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Google Coyly Acknowledges New Android Phones Given to Employees’"  href="http://daringfireball.net/linked/2009/12/12/coy">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Google Hands Out Unlocked Android 2.1 ‘Google Phones’ to Some Employees</title>
+	<link rel="alternate" type="text/html" href="http://www.techcrunch.com/2009/12/11/google-phone-zomg/" />
+	<link rel="shorturl" href="http://✪df.ws/eb0" />
+	<id>tag:daringfireball.net,2009:/linked//6.18540</id>
+	<published>2009-12-12T16:05:32Z</published>
+	<updated>2009-12-13T03:12:05Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>No idea about the tech specs or what it looks like yet, but the Googlers tweeting about it claim it&#8217;s beautiful. I&#8217;ve started getting hits to Daring Fireball with this user agent string, which I believe is this &#8220;Google Phone&#8221;:</p>
+
+<p><code>Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD56C) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17</code></p>
+
+<p>With a few other slightly different build numbers mixed in. &#8220;ERD71F&#8221; is apparently the latest.</p>
+
+<p>Also no idea when, how, or even if Google plans to sell this device to the public, and if so, whether the public model will be carrier unlocked. And credit where credit is due: my money says Arrington is going to be <a href="http://www.techcrunch.com/2009/11/17/thegoogle-phone/">proven right on this one</a>. I suppose this Google Phone <em>can</em> be squared with Andy Rubin&#8217;s comments at the end of October. <a href="http://news.cnet.com/8301-30684_3-10387677-265.html">Rubin shot down rumors of a Google-branded phone by saying</a>, &#8220;We&#8217;re not making hardware. We&#8217;re enabling other people to build hardware.&#8221; You could parse that as being true, insofar as that the phone is apparently <em>made</em> by HTC.</p>
+
+<div>
+<a  title="Permanent link to ‘Google Hands Out Unlocked Android 2.1 &#8216;Google Phones&#8217; to Some Employees’"  href="http://daringfireball.net/linked/2009/12/12/gphone">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Roger Ebert Gives ‘Avatar’ Four Stars</title>
+	<link rel="alternate" type="text/html" href="http://rogerebert.suntimes.com/apps/pbcs.dll/article?AID=/20091211/REVIEWS/912119998" />
+	<link rel="shorturl" href="http://✪df.ws/eaz" />
+	<id>tag:daringfireball.net,2009:/linked//6.18539</id>
+	<published>2009-12-12T05:59:06Z</published>
+	<updated>2009-12-12T05:59:06Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Feel free to turn your Expectations dial up a few clicks:</p>
+
+<blockquote>
+  <p>It takes a hell of a lot of nerve for a man to stand up at the Oscarcast and proclaim himself King of the World. James Cameron just got re-elected.</p>
+</blockquote>
+
+<div>
+<a  title="Permanent link to ‘Roger Ebert Gives &#8216;Avatar&#8217; Four Stars’"  href="http://daringfireball.net/linked/2009/12/12/avatar">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>VMware Fusion 3</title>
+	<link rel="alternate" type="text/html" href="http://ad.doubleclick.net/clk;219963646;43485754;z?http://store.vmware.com/servlet/PromoServlet/promoID.47682900" />
+	<link rel="shorturl" href="http://✪df.ws/eay" />
+	<id>tag:daringfireball.net,2009:/linked//6.18538</id>
+	<published>2009-12-12T02:02:39Z</published>
+	<updated>2009-12-12T02:02:41Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>My thanks to VMware Fusion 3.0 for again sponsoring the DF RSS feed.</p>
+
+<p>I still remember the PowerPC days, running Windows on my Mac via VirtualPC for web browser testing &#8212; amazed that it worked, but cursing the wretched performance. The ability to run  native x86 virtualized OSes is perhaps the best single result of Apple&#8217;s switch to Intel processors. If you need to run Windows apps on your Mac, VMware Fusion is without question the best way to do it. Fantastic performance and a great Mac interface.</p>
+
+<p>Just $79.99 for a new license, and just $39.99 to upgrade to 3.0 from a previous version.</p>
+
+<div>
+<a  title="Permanent link to ‘VMware Fusion 3’"  href="http://daringfireball.net/linked/2009/12/11/vmware-fusion">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Last Chance for This Batch of DF T-Shirts</title>
+	<link rel="alternate" type="text/html" href="http://daringfireball.net/members/shirts" />
+	<link rel="shorturl" href="http://✪df.ws/eav" />
+	<id>tag:daringfireball.net,2009:/linked//6.18535</id>
+	<published>2009-12-12T01:55:20Z</published>
+	<updated>2009-12-13T04:02:12Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Today&#8217;s your last chance to order a DF t-shirt for this go-around. We&#8217;ll be printing new shirts to cover all the orders from this week over the weekend, so if you want one, be sure to get your order in tonight.</p>
+
+<p>These shirts are top-notch, and could win an award for Best T-Shirt Representing the Brand of a Weblog, if there were such an award and if I were the sort of person who entered such contents. There isn&#8217;t and I&#8217;m not, but that doesn&#8217;t mean you wouldn&#8217;t look good in these shirts, because you would.</p>
+
+<p><strong>Update:</strong> Now closed. Thanks to everyone who bought one.</p>
+
+<div>
+<a  title="Permanent link to ‘Last Chance for This Batch of DF T-Shirts’"  href="http://daringfireball.net/linked/2009/12/11/tshirts-last-chance">&nbsp;★&nbsp;</a>
+
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Widespread AT&amp;T Outages in San Francisco</title>
+	<link rel="alternate" type="text/html" href="http://www.engadget.com/2009/12/11/atandt-data-outage-in-san-francisco/" />
+	<link rel="shorturl" href="http://✪df.ws/eax" />
+	<id>tag:daringfireball.net,2009:/linked//6.18537</id>
+	<published>2009-12-12T01:16:57Z</published>
+	<updated>2009-12-12T02:56:32Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Related to the <a href="http://daringfireball.net/linked/2009/12/11/fsj-att">last item</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Widespread AT&amp;T Outages in San Francisco’"  href="http://daringfireball.net/linked/2009/12/11/att-san-francisco">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Fake Steve’s Not-So-Brief Chat With AT&amp;T CEO Randall Stephenson</title>
+	<link rel="alternate" type="text/html" href="http://www.fakesteve.net/2009/12/a-not-so-brief-chat-with-randall-stephenson-of-att.html" />
+	<link rel="shorturl" href="http://✪df.ws/eaw" />
+	<id>tag:daringfireball.net,2009:/linked//6.18536</id>
+	<published>2009-12-12T00:15:25Z</published>
+	<updated>2009-12-12T00:15:26Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Exactly.</p>
+
+<div>
+<a  title="Permanent link to ‘Fake Steve&#8217;s Not-So-Brief Chat With AT&amp;T CEO Randall Stephenson’"  href="http://daringfireball.net/linked/2009/12/11/fsj-att">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Matt Haughey Is Selling PVRblog.com on eBay</title>
+	<link rel="alternate" type="text/html" href="http://cgi.ebay.com/ws/eBayISAPI.dll?ViewItem&amp;item=300376905731" />
+	<link rel="shorturl" href="http://✪df.ws/eau" />
+	<id>tag:daringfireball.net,2009:/linked//6.18534</id>
+	<published>2009-12-11T22:26:10Z</published>
+	<updated>2009-12-11T22:54:55Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>No reserve price, either. 180,000 RSS feed subscribers, according to Feedburner. Can&#8217;t wait to see what it goes for. <strong>Update:</strong> PVRblog was literally an <a href="https://www.google.com/adsense/static/en_US/PvrBlog.html">AdSense case study</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Matt Haughey Is Selling PVRblog.com on eBay’"  href="http://daringfireball.net/linked/2009/12/11/haughey">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>2009 Eddy Award Winning Apps</title>
+	<link rel="alternate" type="text/html" href="http://www.macworld.com/article/144949-2/2009/12/editorschoice2009.html" />
+	<link rel="shorturl" href="http://✪df.ws/eat" />
+	<id>tag:daringfireball.net,2009:/linked//6.18533</id>
+	<published>2009-12-11T19:52:40Z</published>
+	<updated>2009-12-11T19:52:42Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Great choices from Macworld for the year&#8217;s best software: BusyCal, Bento, Dropbox, Things, PDFPen, ClickToFlash, Braid, RipIt, Logic Express, Acorn, Picasa, Painter, and FontExplorer X.</p>
+
+<div>
+<a  title="Permanent link to ‘2009 Eddy Award Winning Apps’"  href="http://daringfireball.net/linked/2009/12/11/eddys">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>‘I Am Locking the Wikipedia Article on Our Sex Life’</title>
+	<link rel="alternate" type="text/html" href="http://www.mcsweeneys.net/2009/12/10trotter.html" />
+	<link rel="shorturl" href="http://✪df.ws/eas" />
+	<id>tag:daringfireball.net,2009:/linked//6.18532</id>
+	<published>2009-12-11T19:23:38Z</published>
+	<updated>2009-12-11T19:23:40Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Alan Trotter at McSweeney&#8217;s. (<a href="http://coudal.com/">Via Coudal</a>.)</p>
+
+<div>
+<a  title="Permanent link to ‘&#8216;I Am Locking the Wikipedia Article on Our Sex Life&#8217;’"  href="http://daringfireball.net/linked/2009/12/11/wikipedia-sex-life">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Dan Frakes’s 2009 Mac Gems of the Year</title>
+	<link rel="alternate" type="text/html" href="http://www.macworld.com/article/145043/2009/12/gemsoftheyear.html" />
+	<link rel="shorturl" href="http://✪df.ws/ear" />
+	<id>tag:daringfireball.net,2009:/linked//6.18531</id>
+	<published>2009-12-11T19:10:51Z</published>
+	<updated>2009-12-11T19:10:52Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>I use a bunch of these.</p>
+
+<div>
+<a  title="Permanent link to ‘Dan Frakes&#8217;s 2009 Mac Gems of the Year’"  href="http://daringfireball.net/linked/2009/12/11/frakes-gems">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>T-Mobile Users Can Bill Android Market Purchases to Their Phone Bill</title>
+	<link rel="alternate" type="text/html" href="http://forums.t-mobile.com/t5/Market-Applications-Help/New-Payment-Option-for-Android-Market-Purchases/td-p/271145" />
+	<link rel="shorturl" href="http://✪df.ws/eaq" />
+	<id>tag:daringfireball.net,2009:/linked//6.18530</id>
+	<published>2009-12-11T19:08:27Z</published>
+	<updated>2009-12-11T19:08:29Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p><a href="http://twitter.com/timbray/status/6572250257">Also via Tim Bray</a>, and I agree with him: this could be a big deal.</p>
+
+<div>
+<a  title="Permanent link to ‘T-Mobile Users Can Bill Android Market Purchases to Their Phone Bill’"  href="http://daringfireball.net/linked/2009/12/11/tmobile">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Bada Development Fundamentals (PDF)</title>
+	<link rel="alternate" type="text/html" href="http://dpimg.ospos.net/contents/tutorials/bada%20Tutorial.Fundamentals.pdf" />
+	<link rel="shorturl" href="http://✪df.ws/eap" />
+	<id>tag:daringfireball.net,2009:/linked//6.18529</id>
+	<published>2009-12-11T19:06:52Z</published>
+	<updated>2009-12-11T19:57:25Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Developer introduction to Samsung&#8217;s upcoming proprietary mobile OS. C++, not Java. I can&#8217;t remember the last new consumer-facing system I&#8217;ve seen using C++ as the default language. (<a href="http://twitter.com/timbray/status/6570836675">Via Tim Bray</a>.)</p>
+
+<p><strong>Update:</strong> I forgot about the game consoles: Xbox 360, PS3, and Wii all have C++ APIs as their default.</p>
+
+<div>
+<a  title="Permanent link to ‘Bada Development Fundamentals (PDF)’"  href="http://daringfireball.net/linked/2009/12/11/bada-dev">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Arrington’s Bad JooJoo</title>
+	<link rel="alternate" type="text/html" href="http://mosspuppet.wordpress.com/2009/12/11/arringtons-bad-joojoo/" />
+	<link rel="shorturl" href="http://✪df.ws/eao" />
+	<id>tag:daringfireball.net,2009:/linked//6.18528</id>
+	<published>2009-12-11T18:52:43Z</published>
+	<updated>2009-12-11T18:52:44Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Mosspuppet on the Arrington/Crunchpad/JooJoo saga.</p>
+
+<div>
+<a  title="Permanent link to ‘Arrington’s Bad JooJoo’"  href="http://daringfireball.net/linked/2009/12/11/mosspuppet-joojoo">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Apple Relaxing App Store Policy Regarding Use of Private APIs?</title>
+	<link rel="alternate" type="text/html" href="http://www.macworld.com/article/145044/2009/12/private_apis.html" />
+	<link rel="shorturl" href="http://✪df.ws/ean" />
+	<id>tag:daringfireball.net,2009:/linked//6.18527</id>
+	<published>2009-12-11T17:58:17Z</published>
+	<updated>2009-12-11T22:07:13Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>At least one developer got a note from the review team calling out a private API call, but the app was accepted and they asked for the private API call to be removed in the <em>next</em> update.</p>
+
+<p>I think it&#8217;d be a huge mistake to assume this means private API calls are now allowed, but flexibility is a good thing.</p>
+
+<p><strong>Update:</strong> Here&#8217;s <a href="http://jnhgrnt.me/post/279351311">another one</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘Apple Relaxing App Store Policy Regarding Use of Private APIs?’"  href="http://daringfireball.net/linked/2009/12/11/private-apis">&nbsp;★&nbsp;</a>
+
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Apple Says Nokia Wanted Cross-License for Apple iPhone Patents</title>
+	<link rel="alternate" type="text/html" href="http://www.engadget.com/2009/12/11/apple-countersues-nokia-for-infringing-13-patents/" />
+	<link rel="shorturl" href="http://✪df.ws/eam" />
+	<id>tag:daringfireball.net,2009:/linked//6.18526</id>
+	<published>2009-12-11T17:47:24Z</published>
+	<updated>2009-12-11T17:47:26Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Engadget&#8217;s Nilay Patel is reading Apple&#8217;s filing, and I think he&#8217;s found the heart of the disagreement:</p>
+
+<blockquote>
+  <p>Apple says Nokia&#8217;s patents aren&#8217;t actually essential to GSM /
+  UMTS, denies infringing them, and says they&#8217;re invalid and / or
+  unenforceable anyway. Apple also says Nokia wanted unreasonable
+  license terms for the patents, including a cross-license for
+  Apple&#8217;s various iPhone device patents as part of any deal, which
+  Apple clearly wasn&#8217;t willing to do.</p>
+</blockquote>
+
+<p>The big question about this dispute all along has been why Apple didn&#8217;t just license Nokia&#8217;s GSM/UMTS patents. Supposedly every other GSM phone maker (or at least all the other major ones) does, and they&#8217;re relatively cheap. The answer is that Nokia didn&#8217;t just want licensing fees from Apple: they wanted cross-license rights to Apple&#8217;s own iPhone patents.</p>
+
+<div>
+<a  title="Permanent link to ‘Apple Says Nokia Wanted Cross-License for Apple iPhone Patents’"  href="http://daringfireball.net/linked/2009/12/11/patel">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Full Text of Apple’s Counterclaim Against Nokia</title>
+	<link rel="alternate" type="text/html" href="http://digitaldaily.allthingsd.com/20091211/apple-countersues-nokia/" />
+	<link rel="shorturl" href="http://✪df.ws/eal" />
+	<id>tag:daringfireball.net,2009:/linked//6.18525</id>
+	<published>2009-12-11T17:41:48Z</published>
+	<updated>2009-12-11T17:42:18Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>John Paczkowski has the full text of Apple&#8217;s filing, including a list of the patents Apple claims Nokia is infringing.</p>
+
+<div>
+<a  title="Permanent link to ‘Full Text of Apple&#8217;s Counterclaim Against Nokia’"  href="http://daringfireball.net/linked/2009/12/11/paczkowsk">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Apple Files Countersuit Against Nokia</title>
+	<link rel="alternate" type="text/html" href="http://www.loopinsight.com/2009/12/11/apple-files-countersuit-against-nokia/" />
+	<link rel="shorturl" href="http://✪df.ws/eak" />
+	<id>tag:daringfireball.net,2009:/linked//6.18524</id>
+	<published>2009-12-11T15:42:30Z</published>
+	<updated>2009-12-11T15:42:30Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Jim Dalrymple:</p>
+
+<p>Apple on Friday said it had launched a countersuit against the world’s largest cellphone maker, Nokia.</p>
+
+<blockquote>
+  <p>According to Apple, Nokia is infringing on 13 of its patents. Apple’s lawyer was very blunt in his statement concerning the case.</p>
+
+  <p>&#8220;Other companies must compete with us by inventing their own technologies, not just by stealing ours,” said Bruce Sewell, Apple’s General Counsel and senior vice president.</p>
+</blockquote>
+
+<p>I wouldn&#8217;t want to fuck with Apple Legal.</p>
+
+<div>
+<a  title="Permanent link to ‘Apple Files Countersuit Against Nokia’"  href="http://daringfireball.net/linked/2009/12/11/apple-nokia-countersuit">&nbsp;★&nbsp;</a>
+
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Daring Fireball RSS Feed Sponsorship</title>
+	<link rel="alternate" type="text/html" href="http://daringfireball.net/feeds/sponsors/" />
+	<link rel="shorturl" href="http://✪df.ws/eaj" />
+	<id>tag:daringfireball.net,2009:/linked//6.18523</id>
+	<published>2009-12-10T22:01:34Z</published>
+	<updated>2009-12-12T02:08:36Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Lately, the weekly DF RSS feed sponsorships have been sold out 10 or more weeks in advance. If you don&#8217;t want to wait that long, you&#8217;re in luck: some last-minute scheduling changes have opened up the next two weeks. If you have a product or service that you’d like to promote to Daring Fireball readers, get in touch.</p>
+
+<p><strong>Update</strong> Now sold out through the end of February.</p>
+
+<div>
+<a  title="Permanent link to ‘Daring Fireball RSS Feed Sponsorship’"  href="http://daringfireball.net/linked/2009/12/10/df-feed-sponsorship">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Airlock</title>
+	<link rel="alternate" type="text/html" href="http://themha.com/airlock/" />
+	<link rel="shorturl" href="http://✪df.ws/eai" />
+	<id>tag:daringfireball.net,2009:/linked//6.18522</id>
+	<published>2009-12-10T19:10:03Z</published>
+	<updated>2009-12-10T19:17:07Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>New $7.77 utility for Mac OS X &#8212; uses Bluetooth to detect when your iPhone or iPod Touch is nearby, and locks/unlocks your Mac accordingly. Clever. (<a href="http://twitter.com/mclaughj/status/6538788086">Via Joseph McLaughlin</a>.)</p>
+
+<div>
+<a  title="Permanent link to ‘Airlock’"  href="http://daringfireball.net/linked/2009/12/10/airlock">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>The Invisible: ‘A Piece With a Lot of Screenshots About the Close Tab Behaviour in Google Chrome’</title>
+	<link rel="alternate" type="text/html" href="http://www.theinvisibl.com/news/2009/12/08/a-piece-with-a-lot-of-screenshots-about-the-close-tab-behaviour-in-google-chrome/" />
+	<link rel="shorturl" href="http://✪df.ws/eag" />
+	<id>tag:daringfireball.net,2009:/linked//6.18520</id>
+	<published>2009-12-10T19:09:58Z</published>
+	<updated>2009-12-10T21:35:19Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Excellent, detailed analysis by Basil Safwat regarding some very clever UI design in Chrome&#8217;s tab-closing behavior.</p>
+
+<p>(But he&#8217;s wrong that it excuses putting the close buttons on the right. It&#8217;s a grammar thing &#8212; in the Mac UI grammar, close buttons go on the left. Even if you buy Safwat&#8217;s &#8220;least-funky behavior&#8221; argument, I&#8217;d argue that Chrome&#8217;s clever (but subtle!) tab-resizing-on-close behavior is far less funky than putting close buttons on the right side of a Mac app. I think Google put them on the right simply to stay consistent with its Windows, Linux, and Chrome OS variants &#8212; putting cross-platform consistency over Mac OS consistency. <strong>Update:</strong> And &#8220;Firefox does it too&#8221; is not a ringing endorsement for good Mac UI design. Firefox is a poster child for crummy fake-Mac-UI cross-platform ports.)</p>
+
+<div>
+<a  title="Permanent link to ‘The Invisible: &#8216;A Piece With a Lot of Screenshots About the Close Tab Behaviour in Google Chrome&#8217;’"  href="http://daringfireball.net/linked/2009/12/10/safwat-chrome-tabs">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Tiger Woods PGA Tour 11</title>
+	<link rel="alternate" type="text/html" href="http://www.cbs.com/late_night/late_show/video/?pid=pBVsnu8_dUL_FCdV7ZvEYIBhycgdlpu4&amp;vs=Default&amp;play=true" />
+	<link rel="shorturl" href="http://✪df.ws/eah" />
+	<id>tag:daringfireball.net,2009:/linked//6.18521</id>
+	<published>2009-12-10T18:26:17Z</published>
+	<updated>2009-12-10T18:26:20Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>&#8220;Hang on to your wigs and keys.&#8221;</p>
+
+<div>
+<a  title="Permanent link to ‘Tiger Woods PGA Tour 11’"  href="http://daringfireball.net/linked/2009/12/10/tiger-woods-11">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Editor &amp; Publisher Folds</title>
+	<link rel="alternate" type="text/html" href="http://www.poynter.org/column.asp?id=45&amp;aid=174719" />
+	<link rel="shorturl" href="http://✪df.ws/eaf" />
+	<id>tag:daringfireball.net,2009:/linked//6.18519</id>
+	<published>2009-12-10T18:09:27Z</published>
+	<updated>2009-12-10T18:09:32Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Speaking of the collapse of the newspaper industry.</p>
+
+<div>
+<a  title="Permanent link to ‘Editor &amp; Publisher Folds’"  href="http://daringfireball.net/linked/2009/12/10/editor-publisher">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Curious iPhone App of the Week (iTunes Store Link)</title>
+	<link rel="alternate" type="text/html" href="http://itunes.apple.com/us/app/google-wave/id337473509?mt=8" />
+	<link rel="shorturl" href="http://✪df.ws/eae" />
+	<id>tag:daringfireball.net,2009:/linked//6.18518</id>
+	<published>2009-12-10T17:31:12Z</published>
+	<updated>2009-12-10T17:31:15Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>&#8220;Google Wave&#8221; &#8212; a $1 iPhone app from developer David Crampton that seems to be nothing more than a web view that loads Google&#8217;s Wave web site.</p>
+
+<div>
+<a  title="Permanent link to ‘Curious iPhone App of the Week (iTunes Store Link)’"  href="http://daringfireball.net/linked/2009/12/10/curious-app">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Amazon Offering Free On-Demand Movies With Purchase of Blu-ray or DVD</title>
+	<link rel="alternate" type="text/html" href="http://www.amazon.com/gp/feature.html/ref=dv_sparkle_discplus?ie=UTF8&amp;docId=1000454101&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=top-1&amp;pf_rd_r=188QN5N8ZA2D6PB7TCH3&amp;pf_rd_t=101&amp;pf_rd_p=503576911&amp;pf_rd_i=2234536011" />
+	<link rel="shorturl" href="http://✪df.ws/ead" />
+	<id>tag:daringfireball.net,2009:/linked//6.18517</id>
+	<published>2009-12-10T16:39:10Z</published>
+	<updated>2009-12-10T16:39:13Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Interesting offer from Amazon:</p>
+
+<blockquote>
+  <p>When you purchase select DVD and Blu-ray titles from Amazon.com you will also receive an Amazon Video On Demand standard definition version as a gift with purchase. You’ll be able to instantly enjoy the video on demand version on your Mac, PC, <a href="http://www.amazon.com/gp//video/ontv/ontv/ref=amb_link_86088051_2?pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=center-3&amp;pf_rd_r=0D46V4B0GHSFWATAA3Y4&amp;pf_rd_t=1401&amp;pf_rd_p=503829231&amp;pf_rd_i=1000454101">compatible device or compatible TV</a> when it is available.</p>
+</blockquote>
+
+<p>But if you&#8217;re buying a Blu-ray disc, why would you want to watch a standard-def On Demand version?</p>
+
+<div>
+
+<a  title="Permanent link to ‘Amazon Offering Free On-Demand Movies With Purchase of Blu-ray or DVD’"  href="http://daringfireball.net/linked/2009/12/10/amazon-on-demand">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>David Pogue on the Nook</title>
+	<link rel="alternate" type="text/html" href="http://www.nytimes.com/2009/12/10/technology/personaltech/10pogue.html" />
+	<link rel="shorturl" href="http://✪df.ws/eac" />
+	<id>tag:daringfireball.net,2009:/linked//6.18516</id>
+	<published>2009-12-10T16:35:39Z</published>
+	<updated>2009-12-10T16:35:42Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Bleh.</p>
+
+<div>
+<a  title="Permanent link to ‘David Pogue on the Nook’"  href="http://daringfireball.net/linked/2009/12/10/pogue-nook">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Walt Mossberg on the Nook</title>
+	<link rel="alternate" type="text/html" href="http://ptech.allthingsd.com/20091209/nook-e-reader-has-potential-but-needs-work/" />
+	<link rel="shorturl" href="http://✪df.ws/eab" />
+	<id>tag:daringfireball.net,2009:/linked//6.18515</id>
+	<published>2009-12-10T16:34:36Z</published>
+	<updated>2009-12-10T16:34:38Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Eh.</p>
+
+<div>
+<a  title="Permanent link to ‘Walt Mossberg on the Nook’"  href="http://daringfireball.net/linked/2009/12/10/mossberg-nook">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Jeff Richardson on Dragon Dictation for iPhone</title>
+	<link rel="alternate" type="text/html" href="http://www.iphonejd.com/iphone_jd/2009/12/review-dragon-dictation.html" />
+	<link rel="shorturl" href="http://✪df.ws/eaa" />
+	<id>tag:daringfireball.net,2009:/linked//6.18514</id>
+	<published>2009-12-10T16:32:06Z</published>
+	<updated>2009-12-10T16:32:09Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Jeff Richardson:</p>
+
+<blockquote>
+  <p>Simply dictate a message to your iPhone and, almost instantly,
+  your voice is transcribed with amazing accuracy. With one tap you
+  can send the transcription to an e-mail. You can dictate a message
+  to your iPhone a heck of a lot faster than you can tap a message
+  on the iPhone keyboard, even if you are a good iPhone typist, so
+  with Dragon Dictation you can save a lot of time writing messages
+  or other text. And for a limited time, this amazing app is free.
+  All I can say is, wow.</p>
+</blockquote>
+
+<p>The app truly is impressive &#8212; it&#8217;s both faster and more accurate than I imagined possible.</p>
+
+<div>
+<a  title="Permanent link to ‘Jeff Richardson on Dragon Dictation for iPhone’"  href="http://daringfireball.net/linked/2009/12/10/richardson-dragon">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Gorillacam</title>
+	<link rel="alternate" type="text/html" href="http://joby.com/gorillacam/" />
+	<link rel="shorturl" href="http://✪df.ws/ea9" />
+	<id>tag:daringfireball.net,2009:/linked//6.18513</id>
+	<published>2009-12-10T16:25:49Z</published>
+	<updated>2009-12-10T16:25:51Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Free iPhone camera app from Joby (makers of the excellent Gorillapods), adds things like a level indicator, time-lapse, and a self-timer. I wish the built-in Camera app had a level indicator.</p>
+
+<div>
+<a  title="Permanent link to ‘Gorillacam’"  href="http://daringfireball.net/linked/2009/12/10/gorillacam">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>TeuxDeux</title>
+	<link rel="alternate" type="text/html" href="http://teuxdeux.com/" />
+	<link rel="shorturl" href="http://✪df.ws/ea8" />
+	<id>tag:daringfireball.net,2009:/linked//6.18512</id>
+	<published>2009-12-10T16:09:47Z</published>
+	<updated>2009-12-10T16:09:51Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Clever, simple, date-based online to-do app from <a href="http://www.swiss-miss.com/">Swissmiss</a> and <a href="http://fictivekin.com/">FictiveKin</a>.</p>
+
+<div>
+<a  title="Permanent link to ‘TeuxDeux’"  href="http://daringfireball.net/linked/2009/12/10/teuxdeux">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>‘Twilight of the American Newspaper’</title>
+	<link rel="alternate" type="text/html" href="http://harpers.org/archive/2009/11/0082712" />
+	<link rel="shorturl" href="http://✪df.ws/ea7" />
+	<id>tag:daringfireball.net,2009:/linked//6.18511</id>
+	<published>2009-12-10T16:01:03Z</published>
+	<updated>2009-12-10T16:01:07Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Elegiac essay in Harper&#8217;s by Richard Rodriguez. (<a href="http://twitter.com/textism/status/6528441431">Via Dean Allen</a>.)</p>
+
+<div>
+<a  title="Permanent link to ‘&#8216;Twilight of the American Newspaper&#8217;’"  href="http://daringfireball.net/linked/2009/12/10/rodriguez">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Nokia Confirms New York and Chicago Flagship Stores Are Closing in Early 2010</title>
+	<link rel="alternate" type="text/html" href="http://www.engadget.com/2009/12/09/nokia-confirms-new-york-and-chicago-flagship-stores-are-closing/" />
+	<link rel="shorturl" href="http://✪df.ws/ea6" />
+	<id>tag:daringfireball.net,2009:/linked//6.18510</id>
+	<published>2009-12-10T14:11:26Z</published>
+	<updated>2009-12-10T14:11:29Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Same deal with the London store &#8212; big expensive stores that failed to generate sales. Chris Ziegler at Engadget writes:</p>
+
+<blockquote>
+  <p>The way we saw it, these stores were never about sales; they were
+  about exposing Nokia to the public and vice versa in a cool, hip
+  environment, and regardless of how you feel about the company&#8217;s
+  handsets, they&#8217;d effectively accomplished that with the flagship
+  strategy.</p>
+</blockquote>
+
+<p>What kind of store is not about sales? That&#8217;s like saying you&#8217;ve got a pen that isn&#8217;t about writing.</p>
+
+<div>
+<a  title="Permanent link to ‘Nokia Confirms New York and Chicago Flagship Stores Are Closing in Early 2010’"  href="http://daringfireball.net/linked/2009/12/10/nokia-stores">&nbsp;★&nbsp;</a>
+
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Great Writer, Great Machine</title>
+	<link rel="alternate" type="text/html" href="http://www.newyorker.com/online/blogs/books/2009/12/great-writer-great-machine.html" />
+	<link rel="shorturl" href="http://✪df.ws/ea5" />
+	<id>tag:daringfireball.net,2009:/linked//6.18509</id>
+	<published>2009-12-09T21:51:39Z</published>
+	<updated>2009-12-09T21:52:41Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Cormac McCarthy&#8217;s typewriter, an Olivetti Lettera 32 he purchased at a pawn shop for $50 in 1963, sells at auction <a href="http://artsbeat.blogs.nytimes.com/2009/12/04/cormac-mccarthys-typewriter-brings-254500-at-auction/">for $254,500</a>:</p>
+
+<blockquote>
+  <p>“It has never been serviced or cleaned other than blowing out
+  the dust with a service station hose. &#8230; I have typed on this
+  typewriter every book I have written including three not
+  published. Including all drafts and correspondence I would put
+  this at about five million words over a period of 50 years.”</p>
+</blockquote>
+
+<p>The proceeds are going to the Santa Fe Institute, &#8220;a nonprofit interdisciplinary scientific research organization&#8221;. And so what will McCarthy write with now? Another Olivetti Lettera 32 in new condition.</p>
+
+<p>(<a href="http://www.newyorker.com/online/blogs/books/2009/12/great-writer-great-machine.html">Via The New Yorker</a>.)</p>
+
+<div>
+<a  title="Permanent link to ‘Great Writer, Great Machine’"  href="http://daringfireball.net/linked/2009/12/09/mccarthy-typewriter">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Walt Disney’s 1943 Creative Organization Chart</title>
+	<link rel="alternate" type="text/html" href="http://www.atissuejournal.com/2009/08/walt-disney’s-creative-organization-chart/" />
+	<link rel="shorturl" href="http://✪df.ws/ea4" />
+	<id>tag:daringfireball.net,2009:/linked//6.18508</id>
+	<published>2009-12-09T21:40:36Z</published>
+	<updated>2009-12-10T08:23:00Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Change the department names, &#8220;story&#8221; to &#8220;experience&#8221;, and s/Walt/Steve/, and this could apply to Apple today. (Via <a href="http://curvedwhite.com/">Curved White</a>, a wonderful new design site which you should just go ahead and subscribe to so I don&#8217;t have to link up everything they post.)</p>
+
+<p><strong>Update:</strong> <a href="http://daringfireball.net/misc/2009/12/disneyorgchart.gif">Here&#8217;s a copy of the org chart itself</a>.</p>
+
+<div>
+
+<a  title="Permanent link to ‘Walt Disney’s 1943 Creative Organization Chart’"  href="http://daringfireball.net/linked/2009/12/09/disney-org-chart">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Journalists Told Not to Use or Mention Apple Products at Windows Mobile Event in Germany</title>
+	<link rel="alternate" type="text/html" href="http://www.9to5mac.com/microsoft_is_blind_stupid_30161" />
+	<link rel="shorturl" href="http://✪df.ws/ea0" />
+	<id>tag:daringfireball.net,2009:/linked//6.18504</id>
+	<published>2009-12-09T21:08:50Z</published>
+	<updated>2009-12-09T21:40:17Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Childish, if true. Here&#8217;s the <a href="http://www.handelsblatt.com/technologie/mobile-welt/handy-betriebssysteme-samsung-eroeffnet-die-hatz-auf-apple;2495605">original story in German</a>; would love to get a translation from a German-speaking DF reader.</p>
+
+<p><strong>Update:</strong> Here&#8217;s a translation from a DF reader:</p>
+
+<blockquote>
+  <p>&#8220;This is a Microsoft event&#8221; a manager harshly rebuked a
+  journalist. &#8220;Apple products have no business being here.&#8221; And in
+  the following silence, as some bashful laughter threatend to
+  emerge, he added: &#8220;I&#8217;m serious about it!&#8221;.</p>
+
+  <p>The offense: Over dinner, the reporter mentioned
+  &#8212; casually &#8212; that there has never been an easier-to-use smartphone than the
+  iPhone. And this was an event meant to promote Windows Mobile 6.5.</p>
+
+  <p>“I was shocked about the emotionality” one of the present
+  journalists exclaimed. “Apparently the company is under a lot of
+  pressure”.</p>
+
+</blockquote>
+
+<p>A little different than forbidding them from being used.</p>
+
+<p>Also, in the original article in the Handelsblatt (a major German business daily), it&#8217;s ambiguous whether the &#8220;manager&#8221; in question was from Microsoft or from Samsung, but I think the best bet is Samsung.</p>
+
+<div>
+<a  title="Permanent link to ‘Journalists Told Not to Use or Mention Apple Products at Windows Mobile Event in Germany’"  href="http://daringfireball.net/linked/2009/12/09/microsoft-germany">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>What Is Google Voice?</title>
+	<link rel="alternate" type="text/html" href="http://www.macworld.com/article/144921/2009/12/googlevoiceexplainer.html" />
+	<link rel="shorturl" href="http://✪df.ws/ea3" />
+	<id>tag:daringfireball.net,2009:/linked//6.18507</id>
+	<published>2009-12-09T20:05:09Z</published>
+	<updated>2009-12-09T20:05:11Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Chris Pepper on Google Voice for Macworld.</p>
+
+<div>
+<a  title="Permanent link to ‘What Is Google Voice?’"  href="http://daringfireball.net/linked/2009/12/09/google-voice">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+	<title>Ommwriter</title>
+	<link rel="alternate" type="text/html" href="http://www.ommwriter.com/" />
+	<link rel="shorturl" href="http://✪df.ws/ea2" />
+	<id>tag:daringfireball.net,2009:/linked//6.18506</id>
+	<published>2009-12-09T20:02:40Z</published>
+	<updated>2009-12-09T20:02:43Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+	<content type="html" xml:base="http://daringfireball.net/linked/" xml:lang="en"><![CDATA[
+
+<p>Artistic musical take on the idea of a full-screen text editor. Currently in beta, and requires you to send them your email address to download.</p>
+
+<div>
+<a  title="Permanent link to ‘Ommwriter’"  href="http://daringfireball.net/linked/2009/12/09/ommwriter">&nbsp;★&nbsp;</a>
+</div>
+
+	]]></content>
+  </entry><entry>
+<title>[Sponsor] VMware Fusion 3</title>
+<link rel="alternate" type="text/html" href="http://ad.doubleclick.net/clk;219963646;43485754;z?http://store.vmware.com/servlet/PromoServlet/promoID.47682900" />
+<link rel="shorturl" href="http://✪df.ws/e9f" />
+<id>tag:daringfireball.net,2009:/feeds/sponsors//11.18483</id>
+
+<author>
+	<name>Daring Fireball Department of Commerce</name>
+</author>
+
+<published>2009-12-07T18:11:54-05:00</published>
+<updated>2009-12-07T18:11:56-05:00</updated>
+
+<content type="html" xml:base="http://daringfireball.net/feeds/sponsors/" xml:lang="en"><![CDATA[
+<p>VMware Fusion 3 makes it easier than ever to run Windows applications just like Mac applications&#8230; without rebooting.</p>
+
+<p>Combine a Mac native user experience with an all new 64-bit native engine designed to deliver peak performance running on Mac OS X Leopard or Snow Leopard. VMware Fusion 3 is the best way to run Windows 7 or over 140 different x86 operating systems &#8212; from DOS to Google Chrome OS &#8212; without rebooting. </p>
+
+<p>Buy VMware Fusion 3 today for $79.99 or upgrade from VMware Fusion 1.x/2.x for only $39.99 at <a href="http://www.vmware.com/fusion">http://www.vmware.com/fusion</a>.</p>
+
+]]></content>
+</entry><entry>
+    <title>★ A Liberal, Accurate Regex Pattern for Matching URLs</title>
+    <link rel="alternate" type="text/html" href="http://daringfireball.net/2009/11/liberal_regex_for_matching_urls" />
+	<link rel="shorturl" href="http://✪df.ws/e7m" />
+	<id>tag:daringfireball.net,2009://1.18418</id>
+	<published>2009-11-27T17:36:34Z</published>
+	<updated>2009-11-29T13:58:13Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+
+<summary type="html">A regex pattern for finding URLs in an arbitrary string of text.</summary>
+	<content type="html" xml:base="http://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>A common programming problem: identify the URLs in an arbitrary string of text, where by &#8220;arbitrary&#8221; let&#8217;s agree we mean something unstructured such as an email message or a tweet. I offer a solution, in the form of the following regex pattern:</p>
+
+<pre><code>\b(([\w-]+://?|www[.])[^\s()&lt;&gt;]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))
+</code></pre>
+
+<p>This pattern should work in most modern regex implementations. I can vouch for it working in Perl, Ruby, and with the PCRE regex library (which in turn means it works in PHP and BBEdit, both of which use PCRE).</p>
+
+<p>This pattern attempts to be practical. It makes no attempt to parse URLs according to any official specification. It isn&#8217;t limited to predefined URL protocols. It should be clever about things like parentheses and trailing punctuation. For example, it will correctly match the URL in the following example lines:</p>
+
+<pre><code>http://foo.com/blah_blah
+http://foo.com/blah_blah/
+(Something like http://foo.com/blah_blah)
+http://foo.com/blah_blah_(wikipedia)
+(Something like http://foo.com/blah_blah_(wikipedia))
+http://foo.com/blah_blah.
+http://foo.com/blah_blah/.
+&lt;http://foo.com/blah_blah&gt;
+&lt;http://foo.com/blah_blah/&gt;
+http://foo.com/blah_blah,
+http://www.example.com/wpstyle/?p=364.
+http://✪df.ws/123
+rdar://1234
+rdar:/1234
+http://userid:password@example.com:8080
+http://userid@example.com
+http://userid@example.com:8080
+http://userid:password@example.com
+http://example.com:8080 x-yojimbo-item://6303E4C1-xxxx-45A6-AB9D-3A908F59AE0E
+message://%3c330e7f8409726r6a4ba78dkf1fd71420c1bf6ff@mail.gmail.com%3e
+http://➡.ws/䨹
+www.➡.ws/䨹
+&lt;tag&gt;http://example.com&lt;/tag&gt;
+Just a www.example.com link.
+</code></pre>
+
+<p>It attempts to be particularly clever with regard to parentheses, which, in my experience, only ever seem to occur in the wild in Wikipedia URLs, and which many URL matching patterns seem to botch. The pattern looks for a single pair of balanced parentheses within the URL, which is how it correctly omits the trailing parenthesis in the following line:</p>
+
+<pre><code>(Something like http://foo.com/blah_blah)
+</code></pre>
+
+<p>The pattern is also liberal about Unicode glyphs within the URL, which allows it, among other things, to match IDN domain names, such as the ✪df.ws domain I registered for the custom URL shortener I use for the <a href="http://twitter.com/daringfireball">Daring Fireball Twitter feed</a>.</p>
+
+<p>Suggestions and improvements are welcome, including just sending me example input where the current pattern fails.</p>
+
+<p><strong>Update, 28 Nov 2009</strong>: <a href="http://daringfireball.net/linked/2009/11/28/storm-regex">Alan Storm has a great follow-up piece.</a></p>
+
+
+
+    ]]></content>
+  </entry><entry>
+    <title>★ iPhone Web Apps as an Alternative to the App Store</title>
+    <link rel="alternate" type="text/html" href="http://daringfireball.net/2009/11/iphone_web_apps_alternative" />
+	<link rel="shorturl" href="http://✪df.ws/e6y" />
+	<id>tag:daringfireball.net,2009://1.18394</id>
+	<published>2009-11-24T01:16:53Z</published>
+	<updated>2009-11-24T05:54:21Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+
+<summary type="html">I think it would be good for everyone -- Apple, developers, and iPhone users -- if unrestricted web apps became a serious alternative to the restricted App Store. But it isn&apos;t credible to argue that they already are.</summary>
+	<content type="html" xml:base="http://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Peter-Paul Koch (a long-time, highly-regarded expert on web standards and rendering engine compatibility), argues forcefully that developers who wish to write software for the iPhone <a href="http://www.quirksmode.org/blog/archives/2009/11/apple_is_not_ev.html">should skip the App Store and write iPhone-optimized web apps instead</a>. His essay, perhaps because it is so strongly-worded, seems to have polarized the responses. The truth, as usual, lies somewhere in the middle.</p>
+
+<p>His piece is definitely worth reading, and his primary point is true:</p>
+
+<blockquote>
+  <p>In order to release an iPhone application without having to submit
+  it to Apple’s insane App Store process, developers could just
+  use Web technologies and create Web apps instead of native apps.</p>
+</blockquote>
+
+<p>iPhone web apps are not in any way restricted by Apple. And I think he&#8217;s correct that the technique is currently under-utilized, and it&#8217;s a huge benefit to developers that such apps should also work just as well on Android and WebOS, with minimal additional work.</p>
+
+<p>But he&#8217;s also very much wrong about just what&#8217;s possible in an iPhone web app, in terms of user experience. Koch writes:</p>
+
+<blockquote>
+  <p>I reviewed the apps I have on my iPhone, and most can be released
+  as a Web app <em>right now</em>. The exceptions are complex games that are
+  both graphically and programmatically intensive, and apps that
+  depend on device functions such as the accelerometer or GPS.</p>
+
+  <p>As I said, Safari supports geolocation, and maybe Apple is working
+  on other device APIs. That would solve all problems for the second
+  category. Complex games will remain very hard to release as a Web
+  app in the near future.</p>
+
+  <p>Still, the graphically simple games such as sudoku and chess, the
+  interactive shopping lists, the dictionaries and bible citation
+  apps, the beer appreciation apps, the firmware Yahoo weather app,
+  and most importantly <em>all</em> social network clients could have been
+  written as a Web app without any loss of quality whatsoever. (Most
+  have fairly little quality to lose in any case.)</p>
+</blockquote>
+
+<p>I don&#8217;t know about &#8220;social network clients&#8221; in general, because I don&#8217;t use many social networks. But I do use two of them heavily: Twitter and Flickr. </p>
+
+<p>There is no way anyone could write an iPhone web app that works as well or feels as good as any of the top native iPhone Twitter clients. You can make <em>an</em> iPhone Twitter client as a web app. You can even make a <em>good</em> one. In fact, Dean Robinson <em>did</em> &#8212; it&#8217;s called <a href="http://blog.hahlo.com/">Hahlo</a>. It&#8217;s a good iPhone Twitter client. It&#8217;s a web app. It&#8217;s also slower, less graceful, and less useful than any of the popular native iPhone Twitter clients.</p>
+
+<p>With Flickr, it&#8217;s even worse. For just viewing existing Flickr content, Flickr&#8217;s own <a href="http://m.flickr.com/">m.flickr.com</a> web site is great. But you can&#8217;t write an iPhone web app Flickr client that lets you upload new photos or videos. It isn&#8217;t technically possible, because iPhone web apps don&#8217;t have access to the device&#8217;s image library or the camera.</p>
+
+<p>The argument that you can make iPhone web apps that are &#8220;good enough&#8221; misses the entire point of iPhone apps &#8212; the entire point of the iPhone itself, even &#8212; all of the things that drive Twitter users to pay $3, $4, or $5 for apps that do the same things that can be done for free by loading Twitter&#8217;s web site in MobileSafari. &#8220;Good enough&#8221; is not good enough on the iPhone.</p>
+
+<p>There&#8217;s a serious <a href="http://en.wikipedia.org/wiki/Eating_one%27s_own_dog_food">dog food factor</a> at play. Apple&#8217;s own apps for the iPhone OS are written using Cocoa Touch. The only iPhone web app I can think of from Apple is the RSS reader at <a href="http://reader.mac.com/">reader.mac.com</a>, and the domain name alone tells you just how important that app is to Apple.</p>
+
+<p>Koch writes (childish Jesus-caps on the pronouns his):</p>
+
+<blockquote>
+  <p>Apple’s original plan for iPhone development was to use Web
+  technologies. This plan caught both Mac developers and Web
+  developers by surprise because it was totally unexpected.</p>
+
+  <p>The plan failed. Jobs Himself ordered His developers to create Web
+  applications with Web standards, but a deafening silence ensued.
+  Then He hurriedly thought up the App Store. Too hurriedly, as it
+  now turns out.</p>
+</blockquote>
+
+<p>I can&#8217;t prove that this isn&#8217;t true. But <a href="http://daringfireball.net/2007/06/wherefore_art_thou_iphone_sdk">my theory has always been</a> that Apple&#8217;s initial &#8220;<a href="http://daringfireball.net/2007/06/wwdc_2007_keynote">sweet solution</a>&#8221; for third-party iPhone development &#8212; to just write web apps &#8212; was never intended as a long-term solution. I think the plan was always to allow native Cocoa Touch development eventually, and I don&#8217;t think there was anything rushed about it. The delay between the debut of the original iPhone and announcement of the SDK was, I think, simply due to the SDK not being ready in June 2007. Everyone who followed iPhone OS 1.x jailbreak development noted that the Cocoa Touch APIs changed <em>significantly</em> between iPhone OS 1.0 and 2.0.</p>
+
+<p>But the best proof is what I pointed out above: Apple itself created almost no iPhone web apps. Successful iPhone developers don&#8217;t just want to write software that works on the iPhone. They want to write software for the iPhone that&#8217;s just as good as Apple&#8217;s. Today that means using Cocoa Touch and the native SDK.</p>
+
+<p>When you write a Cocoa Touch app for the iPhone, you&#8217;re not starting from scratch. You&#8217;re starting with the Cocoa Touch framework. As Faruk Ateş astutely points out <a href="http://farukat.es/journal/2009/11/347-iphone-developers-arent-stupid-ppk">in his response to Koch</a>, to discount the framework is to discount everything that sets the iPhone apart as a development platform. Not only are native iPhone apps faster and more capable than their web-app equivalents, but they&#8217;re easier to write.</p>
+
+<p>This may change. A combination of increasing CPU performance, further improvements to WebKit and the Nitro JavaScript interpreter, more RAM, and additional web app capabilities in the iPhone OS (things like access to the camera and image library) could, combined, make for a future where some types of iPhone web apps aren&#8217;t just &#8220;good enough&#8221; but are truly indistinguishable from native Cocoa Touch apps. The hardware performance improvements are inevitable, but it remains to be seen whether Apple will provide deeper and more significant iPhone OS-specific hooks for web apps. I hope they do. I think it would be good for everyone &#8212; Apple, developers, and iPhone users &#8212; if unrestricted web apps became a serious alternative to the restricted App Store. But it isn&#8217;t credible to argue that they already are.<sup id="fnr1-2009-11-23"><a href="#fn1-2009-11-23">1</a></sup></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2009-11-23">
+<p>But even then, iPhone optimized web apps in this hypothetical future would <em>still</em> lack the commerce features provided by the App Store. Web app developers can charge for subscriptions to their software, sure &#8212; but it would be difficult to match the App Store in terms of the &#8220;just click &#8216;Buy&#8217; and type your iTunes password&#8221; experience.&nbsp;<a href="#fnr1-2009-11-23"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+  </entry><entry>
+    <title>★ Maybe Instead of Two Cars, You Just Need a Car and a Bicycle</title>
+    <link rel="alternate" type="text/html" href="http://daringfireball.net/2009/11/a_car_and_a_bicycle" />
+	<link rel="shorturl" href="http://✪df.ws/e6l" />
+	<id>tag:daringfireball.net,2009://1.18381</id>
+	<published>2009-11-21T00:48:15Z</published>
+	<updated>2009-11-21T02:20:16Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+
+<summary type="html">One thing that strikes me about Chrome OS and Litl is that neither bother trying to do everything Windows or Mac OS X can do. Not even close. I don&apos;t think either even bothers trying to serve as one&apos;s primary computer.</summary>
+	<content type="html" xml:base="http://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>One thing that strikes me about Chrome OS and Litl is that neither bother trying to do everything Windows or Mac OS X can do. Not even close. I don&#8217;t think either even bothers trying to serve as one&#8217;s primary computer.</p>
+
+<p>The idea that they&#8217;re designed to serve as secondary computers is a big part of <a href="http://daringfireball.net/2009/11/the_os_opportunity">the opportunity I see for new Web-focused OSes</a>. I think that&#8217;s one of the implicit factors that define what people call &#8220;netbooks&#8221;. How many people use one of those as their one and only computer?</p>
+
+<p>If you start with the assumption that a computer will be a secondary machine &#8212; something purchased because it&#8217;s cheaper, smaller, and lighter &#8212; you can make all sorts of different assumptions about what it needs to be capable of.</p>
+
+<p>In the early part of this decade, Apple&#8217;s turnaround under Steve Jobs was based on the concept of the Mac as a &#8220;digital hub&#8221; &#8212; a device to which you connect and manage satellite devices like iPods and cameras.<sup id="fnr1-2009-11-20"><a href="#fn1-2009-11-20">1</a></sup> If you have more than one computer, why should the secondary computer (or computers) need to be just as capable &#8212; and just as complex, expensive, power-hungry, and heavy &#8212; as your primary one? Why should it run the same OS?</p>
+
+<p>The idea of a computer that does a lot less &#8212; leaving out even things you  consider essential, because you can still do those things on your other, primary computer &#8212; is liberating. That&#8217;s the opportunity, and that&#8217;s the idea behind Chrome OS and Litl and even Android and iPhone OS.</p>
+
+<p>Long-term, there&#8217;s no denying that Google is steering toward a future where typical users have no &#8220;primary&#8221; computer, but instead where every computer is just a terminal to Web-based software running on servers across the Internet. But there&#8217;s an opportunity <em>today</em> for secondary computers that offer just a subset of the functionality of Mac OS X and Windows, especially if they don&#8217;t just do less, but (like the iPhone) do less <em>really well</em>.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2009-11-20">
+<p>Here&#8217;s a YouTube clip of <a href="http://www.youtube.com/watch?v=9046oXrm7f8">Steve Jobs introducing Apple&#8217;s &#8220;digital hub&#8221; strategy</a> in his January 2001 Macworld Expo keynote. It&#8217;s sort of mind-blowing &#8212; both in terms of the prescience of the strategy itself and just how long ago it seems. There was no such thing as an iPod yet, Mac OS X 10.0 was still <a href="http://en.wikipedia.org/wiki/Mac_OS_X_v10.0">two months away</a> from shipping, and, talking about digital cameras, Jobs mentions that they then accounted for 15 percent of the camera market but would &#8220;soon&#8221; account for 50 percent.&nbsp;<a href="#fnr1-2009-11-20"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+  </entry><entry>
+    <title>★ The OS Opportunity</title>
+    <link rel="alternate" type="text/html" href="http://daringfireball.net/2009/11/the_os_opportunity" />
+	<link rel="shorturl" href="http://✪df.ws/e5w" />
+	<id>tag:daringfireball.net,2009://1.18356</id>
+	<published>2009-11-19T04:36:34Z</published>
+	<updated>2009-11-19T06:24:59Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+
+<summary type="html">These PC makers are lacking in neither resources nor opportunity. What they&apos;re lacking is ambition, gumption, and passion for great software and new frontiers.</summary>
+	<content type="html" xml:base="http://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>A few weeks ago, in a piece here titled &#8220;<a href="http://daringfireball.net/2009/10/herd_mentality">Herd Mentality</a>&#8221;, I argued that PC makers who want to succeed should create their own OSes:</p>
+
+<blockquote>
+  <p>It’s not just that Apple <em>is</em> different among computer makers.
+  It’s that Apple is the only one that even <em>can</em> be different,
+  because it’s the only one that has its own OS. Part of the
+  industry-wide herd mentality is an assumption that no one else can
+  make a computer OS — that anyone can make a computer but only
+  Microsoft can make an OS. It should be embarrassing to companies
+  like Dell and Sony, with deep pockets and strong brand names, that
+  they’re stuck selling computers with the same copy of Windows
+  installed as the no-name brands.</p>
+
+</blockquote>
+
+<p>Hardware and software both matter, and Apple&#8217;s history shows that there&#8217;s a good argument to be made for developing integrated hardware and software. But if you asked me which matters more, I wouldn&#8217;t hesitate to say software. All things considered I&#8217;d much prefer a PC running Mac OS X to a Mac running Windows.</p>
+
+<p>Microsoft, I think we&#8217;d all agree, sees things the same way (well, in terms of software being more important). They&#8217;ve got PC makers under their thumb.</p>
+
+<p>The most common bit of critical feedback I got in response to &#8220;Herd Mentality&#8221; is an argument that goes like this: <em>You don&#8217;t want a world with several additional desktop OSes. It would make for a compatibility and interoperability nightmare. We were there before, in the early days of the personal computer, and it was a mess.</em></p>
+
+<p>I say two things to that. First, it may have been a mess, but it was a beautiful mess. It was glorious. It was fun. The Apple II, the IBM PC and DOS, Commodore, Atari, Acorn. The TI-99/4A.</p>
+
+<p>Second, this ain&#8217;t then. The world is a very different place today.</p>
+
+<p>In those days, before DOS ran most competing platforms out of the market, interoperability and data interchange were at best difficult, and often impossible. Data was stored in incompatible file formats written to incompatible floppy disks<sup id="fnr1-2009-11-18"><a href="#fn1-2009-11-18">1</a></sup> by incompatible apps compiled for incompatible CPU architectures. Even later in the ’80s, when networking became common (at least in businesses) the network protocols were proprietary.</p>
+
+<p>That was the world where DOS won out. Get everyone on DOS and you could all open each other&#8217;s WordPerfect and 1-2-3 files, if only by sharing them on floppy disks. So DOS gained users, and because it gained users it got developers, and because it gained developers it got more users.</p>
+
+<p>A similar feedback loop is going on with the iPhone today, but it&#8217;s far less sticky. The DOS/Windows monopoly grew impregnable because it was a platform where the only way to play along was to join it.</p>
+
+<p>That&#8217;s not the way things are today. Sure, there are massive business markets where Windows remains essential. But the Web is a bigger platform than Windows. The Web is universal. Every computer is on the Web. The Web provides us with a core set of software and APIs that work everywhere.</p>
+
+<p>Supposedly, <a href="http://www.techcrunch.com/2009/11/17/google-chrome-os-launch/">tomorrow Google is set to unveil the details of Chrome OS</a>, but we already know one thing about it: it&#8217;s designed around the assumption that the Web is the most important software platform in the world today.</p>
+
+<p>But last week came news of another, similar initiative, from a far smaller company than Google: <a href="http://litl.com/">the Litl</a> &#8212; a $700 &#8220;webbook&#8221;. If you haven&#8217;t seen it, go check out their web site &#8212; <a href="http://litl.com/support/index.htm?id=371758">the videos on their support page</a> offer the best introduction to their UI. It&#8217;s fascinating and clever in several ways. It is refreshingly simple. And most importantly: it is truly new. I don&#8217;t know if Litl is going to be a success &#8212; $700 seems steep for this when you can get a MacBook for $999, and the easel mode strikes me as an awkward gimmick without a touchscreen &#8212; but everyone involved with the Litl deserves tremendous credit just for having the stones to do this, to say, <em>Hey, maybe computers in 2010 can do better than a user experience that is fundamentally unchanged from the original Macintosh in 1984.</em></p>
+
+<p>If a small startup can build the Litl, why couldn&#8217;t a big company like Dell or Sony? People today <a href="http://www.hpmuseum.org/">still love HP calculators</a> made 30 or even 40 years ago. Has HP made anything <em>this</em> decade that anyone will remember fondly even five years from now? Inkjet printers?</p>
+
+<p>If Palm can create WebOS for pocket-sized computers &#8212; replete with an email client, calendaring app, web browser, and SDK &#8212; why couldn&#8217;t these companies make something equivalent for full-size computers? The hard part of what Palm is doing with WebOS is getting acceptable performance out of a cell phone processor. </p>
+
+<p>These PC makers are lacking in neither financial resources nor opportunity. What they&#8217;re lacking is ambition, gumption, and passion for great software and new frontiers. They&#8217;re busy dying.</p>
+
+<div class="footnotes">
+
+<hr />
+<ol>
+<li id="fn1-2009-11-18">
+<p>If your computer even had a floppy drive, that is. Some, like the TI-99/4A, typically used cassette tapes. Cassette tapes!&nbsp;<a href="#fnr1-2009-11-18"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+  </entry><entry>
+    <title>★ Oh Joe You Didn’t</title>
+    <link rel="alternate" type="text/html" href="http://daringfireball.net/2009/11/oh_joe_you_didnt" />
+	<link rel="shorturl" href="http://✪df.ws/e54" />
+	<id>tag:daringfireball.net,2009://1.18328</id>
+	<published>2009-11-16T02:23:18Z</published>
+	<updated>2009-11-16T15:05:18Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+
+<summary type="html">Either Joe Wilcox has uncovered a massive, widely-reported error, or, he has made a fool out of himself.</summary>
+	<content type="html" xml:base="http://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Joe Wilcox published a piece Friday titled &#8220;<a href="http://www.betanews.com/joewilcox/article/Apple-was-NOT-more-profitable-selling-cell-phones-than-Nokia-in-Q3/1258169110">Apple was NOT more profitable selling cell phones than Nokia in Q3</a>&#8221; (caps emphasis his). It&#8217;s in reference to the widely-cited (and linked from DF <a href="http://daringfireball.net/linked/2009/11/10/apple-nokia-iphone">here</a>) report last week by Strategy Analytics which concluded <a href="http://www.reuters.com/article/COMSRV/idUSN1051937420091110">that Apple generated more profits</a> than Nokia from mobile phone handset sales last quarter.</p>
+
+<p>Wilcox was skeptical &#8212; nothing wrong with that &#8212; and conducted his own  investigation into the numbers:</p>
+
+<blockquote>
+  <p>Well, hell, that sounds reasonable enough, right? Wrong. Apple and
+  Nokia SEC filings tell a different story. Both companies announced
+  third calendar quarter results a few days apart in mid October.
+  For devices and services, <a href="http://www.nokia.com/about-nokia/financials/quarterly-and-annual-information/q3-2009">Nokia reported profits of €785 million</a>,
+  which is about US $1.1 billion. Apple reported total
+  profits &#8212; that is for all products &#8212; of $1.67 billion in its
+  earnings <a href="http://www.apple.com/pr/library/2009/10/19results.html">press release</a>, and later the <a href="http://phx.corporate-ir.net/External.File?item=UGFyZW50SUQ9MTg1OTB8Q2hpbGRJRD0tMXxUeXBlPTM=&amp;t=1">10-K filing</a>. I searched the
+  10-K, and, as I expected, Apple doesn&#8217;t breakout iPhone profits.</p>
+
+  <p>But it doesn&#8217;t have to for purposes of this discussion. I don&#8217;t
+  doubt that Apple is more profitable per handset, since iPhone is a
+  smartphone, than Nokia. But the numbers don&#8217;t add up to Apple&#8217;s
+  overall handset profitability exceeding Nokia&#8217;s during third
+  quarter, unless someone is making the bold assumption that all, or
+  nearly all, Apple profits came from iPhone. They surely do not.
+  What? Apple made only $700,000 on iPod, Macintosh, retail and
+  software &#8212; $1.6 billion &#8212; on iPhone. No way.</p>
+
+  <p>The disturbing lack of fact checking seems to be a trend when it
+  comes to Apple these days.</p>
+
+</blockquote>
+
+<p>This <em>is</em> disturbing. Either Joe Wilcox has uncovered a massive, widely-reported error, or, he has made a fool out of himself. (That Wilcox thinks $1.67 billion - 1.6 billion is $700,000, rather than $70,000,000, offers a clue.)</p>
+
+<p>What Wilcox is arguing is that Apple only reported $1.67 billion in total profit for the quarter, so how could they possibly have made $1.6 billion from the iPhone alone? But that&#8217;s not what Apple reported at all. Perhaps if Wilcox had actually read more than just the first paragraph of Apple&#8217;s press release announcing the company&#8217;s earnings, he&#8217;d understand. <a href="http://www.apple.com/pr/library/2009/10/19results.html">Apple&#8217;s announcement stated</a>:</p>
+
+<blockquote>
+  <p>Apple today announced financial results for its fiscal 2009 fourth
+  quarter ended September 26, 2009. The Company posted revenue of
+  $9.87 billion and a net quarterly profit of $1.67 billion, or
+  $1.82 per diluted share. These results compare to revenue of $7.9
+  billion and net quarterly profit of $1.14 billion, or $1.26 per
+  diluted share, in the year-ago quarter. Gross margin was 36.6
+  percent, up from 34.7 percent in the year-ago quarter.
+  International sales accounted for 46 percent of the quarter’s
+  revenue.</p>
+
+  <p>In accordance with the subscription accounting treatment required
+  by GAAP, the Company recognizes revenue and cost of goods sold for
+  iPhone and Apple TV over their estimated economic lives. Adjusting
+  GAAP sales and product costs to eliminate the impact of
+  subscription accounting, the corresponding non-GAAP measures for
+  the quarter are $12.25 billion of “Adjusted Sales” and $2.85
+  billion of “Adjusted Net Income.”</p>
+
+</blockquote>
+
+<p>As everyone who follows Apple should be aware, Apple is accounting for iPhone sales over eight quarters. This practice is unusual, but it&#8217;s not complicated. This is how they&#8217;re able to give software updates to iPhone owners free of charge, and, conversely, because iPod sales are <em>not</em> accounted for on a subscription basis, why iPod Touch users must pay for the same updates. When Apple sold an iPhone last quarter it only accounted for one-eighth of the revenue and profits for that quarter. The remaining seven-eigths will be accounted for over the next seven quarters.</p>
+
+<p>Subscription-based accounting does not mean that Apple doesn&#8217;t pocket the cash from iPhones all at once. They do &#8212; at least since June 2008 when they switched to the model of being paid an up-front subsidy from the carriers, <a href="http://www.informationweek.com/news/personal_tech/iphone/showArticle.jhtml?articleID=208403007">rather than the per-month revenue-sharing model</a> they used with AT&amp;T for the first year. It&#8217;s all just a matter of accounting. What Apple calls &#8220;non-GAAP measures&#8221; are its way of saying &#8220;this is how much money we actually made this quarter&#8221;. The &#8220;adjusted net income&#8221; of $2.85 billion is effectively what Apple would have reported as profit for the quarter if they weren&#8217;t using subscription based accounting for the iPhone and Apple TV.</p>
+
+<p>This is how Apple&#8217;s cash on hand has grown by $21 <em>billion</em> in the last three years, <a href="http://www.google.com/finance?q=NASDAQ:AAPL&amp;fstype=ii">from $14.5B on 30 September 2006 to $36.2B on 26 September 2009</a>. (Click &#8220;Balance Sheet&#8221; and &#8220;Annual Data&#8221;.)<sup id="fnr1-2009-11-15"><a href="#fn1-2009-11-15">1</a></sup></p>
+
+<p>It is true that Apple does not specifically break out the revenue or profits from iPhone sales. But unless you think Apple is selling a lot more Apple TVs than most of us do, it&#8217;s pretty safe to say that the iPhone accounts for nearly all of the difference between Apple&#8217;s GAAP and non-GAAP reported profit, which difference came to $1.18 billion for the quarter. That suggests Strategy Analytics&#8217;s numbers are in the ballpark. It&#8217;s also worth noting that Nokia does <em>not</em> account for its handset sales as Apple does &#8212; Nokia accounts for them &#8220;normally&#8221;, up front, in the quarter in which they were sold.</p>
+
+<p>Even if Strategy Analytics&#8217;s $1.6 billion figure is a little high, they&#8217;d have to be wrong by <em>over $500 million</em> for their overall conclusion (that Apple made more profit than Nokia selling phones) to be wrong. Here&#8217;s another back-of-the-envelope calculation. Apple <em>does</em> release the total number of iPhones sold during each quarter. Last quarter it was 7.4 million. So take Strategy Analytics&#8217;s estimate of $1.6 billion in profit, divide by 7.4 million iPhones, and you get $216 in profit per iPhone, which, again, sounds like it&#8217;s in the ballpark. (Unsubsidized 16 and 32 GB iPhone 3GS models &#8212; the most popular iPhones &#8212; sell for $599 and $699 respectively, and Apple&#8217;s reported gross margin for the quarter was 36.6 percent.)</p>
+
+<p>As for Wilcox&#8217;s would-be exposé, I&#8217;m almost embarrassed to quote his concluding paragraph:</p>
+
+<blockquote>
+  <p>As for Apple&#8217;s overall phone profits being higher than Nokia&#8217;s,
+  don&#8217;t believe it. Just because dozens of Websites report something
+  as true doesn&#8217;t make it so. Because of the extent of misreporting,
+  I can&#8217;t say where the fault lies. The Strategic Analytics report,
+  which again I haven&#8217;t seen, might have gone no further than
+  present numbers showing that Apple makes more profit per phone
+  than Nokia. That absolutely makes sense. But to assert that iPhone
+  generated $1.6 billion profit during a quarter when all Apple
+  products generated $1.67 billion is simple stupidity.</p>
+</blockquote>
+
+<p>Simple stupidity indeed.</p>
+
+<p>If you subscribe to the Market Share gospel, it&#8217;s perhaps very hard to wrap your head around the idea that a company with 2.5 percent unit sale market share generates more profit than a company with 35 percent market share. But the numbers aren&#8217;t complicated. The iPhone really is that big a deal.</p>
+
+<div class="footnotes">
+
+<hr />
+<ol>
+<li id="fn1-2009-11-15">
+<p>That Wilcox is so utterly befuddled by Apple&#8217;s iPhone accounting &#8212; convinced that Apple is generating far less cash than they actually are &#8212; makes me wonder how many analysts and investors are likewise confused about this. Probably many. So it&#8217;s worth noting that a recent accounting rule change may change the way Apple reports these numbers in the near future, such that Apple could report revenue from iPhones the way casual observers expect &#8212; in the quarter the sales occurred. Here&#8217;s what <a href="http://www.businessinsider.com/henry-blodget-new-apple-iphone-accounting-change-could-send-profits-and-stock-to-moon-2009-9">Henry Blodget wrote about the rule change</a> in September:</p>
+
+<blockquote>
+  <p>The new rule will allow Apple to recognize the iPhone hardware
+revenue and profit at the point of sale, while an estimated value
+for the software will be recognized over the life of the device.</p>
+</blockquote>
+
+<p>A change in accounting shouldn&#8217;t make a difference, but I&#8217;m guessing it will. Look for Apple&#8217;s stock to jump up if they make this change.&nbsp;<a href="#fnr1-2009-11-15"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+  </entry><entry>
+    <title>★ The Airfoil Speakers Touch Situation</title>
+    <link rel="alternate" type="text/html" href="http://daringfireball.net/2009/11/airfoil_touch_situation" />
+	<link rel="shorturl" href="http://✪df.ws/e4t" />
+	<id>tag:daringfireball.net,2009://1.18317</id>
+	<published>2009-11-13T18:36:12Z</published>
+	<updated>2009-11-13T20:35:01Z</updated>
+	<author>
+		<name>John Gruber</name>
+		<uri>http://daringfireball.net/</uri>
+	</author>
+
+<summary type="html">If the de facto rule is &quot;Apple can show a representation of the computer its iPhone apps connect to, but third-party developers can&apos;t&quot;, that doesn&apos;t exactly refute Rogue Amoeba&apos;s conclusion that developing for this platform just isn&apos;t worth it.</summary>
+	<content type="html" xml:base="http://daringfireball.net/" xml:lang="en"><![CDATA[
+<p>Regarding today&#8217;s <a href="http://daringfireball.net/linked/2009/11/13/app-store-rogue-amoeba">aforelinked</a> tale from Rogue Amoeba regarding the <a href="http://www.rogueamoeba.com/utm/2009/11/13/airfoil-speakers-touch-1-0-1-finally-ships/">four-month-long process to get a minor bug-fix update to Airfoil Speakers Touch</a> published on the App Store, several readers who insist upon defending Apple in this matter have pointed me to <a href="http://iphonedevelopment.blogspot.com/2009/11/rogue-amoeba.html">Jeff LaMarche&#8217;s response</a>. LaMarche writes:</p>
+
+<blockquote>
+  <p>I&#8217;m going to risk the ire of the maddening crowd once more, but I
+  think somebody needs to come to Apple&#8217;s defense this time. I love
+  a good mob scene as much as the next guy, and I keep my pitchfork
+  nice and sharp just in case the need should arise. But… the
+  picture that Rogue Amoeba has painted in their farewell post
+  doesn&#8217;t look quite so black and white to me. Certainly, Apple
+  could have handled many things about the situation better, but so
+  could have Rogue Amoeba. Let&#8217;s strip it down to the basics.</p>
+
+  <ol>
+  <li>Airfoil Speakers Touch included pictures of Apple products;</li>
+  <li>These were images owned by Apple;</li>
+  <li>The iPhone SDK Agreement specifically prohibits the use of
+  images, icons, and logos owned by Apple in iPhone applications;</li>
+  <li>The first rejection clearly and unambiguously stated why the
+  app was being rejected and how it could be fixed.</li>
+  </ol>
+
+</blockquote>
+
+<p>There is much that is wrong with LaMarche&#8217;s synopsis.</p>
+
+<p>Point 1 is simply wrong; the Airfoil Speakers Touch iPhone app does not contain any of these images. It contains no pictures of Apple computers. It contains no icons of Apple applications. It displays these images after they are sent across the network by Airfoil for Mac. Airfoil for Mac reads these images using <a href="http://stackoverflow.com/questions/1381915/how-do-i-get-the-icon-of-the-users-mac">public official Mac OS X APIs</a>. I.e. Airfoil Speakers Touch can only show a picture of the Mac it is connected to because the image is sent <em>from</em> the Mac it is connected to.</p>
+
+<p>Point 3, I disagree with. I&#8217;ve just re-read the entire iPhone SDK Agreement (again), and I find no clause that prohibits what Airfoil Speakers Touch was doing. Here&#8217;s section 3.2 (d), which is perhaps what LaMarche is referring to (bold emphasis added):<sup id="fnr1-2009-11-13"><a href="#fn1-2009-11-13">1</a></sup></p>
+
+<blockquote>
+  <p>(d) To the best of Your knowledge and belief, Your Application and
+  Licensed Application Information do not and will not <strong>violate</strong>,
+  <strong>misappropriate</strong>, or <strong>infringe</strong> any Apple or third party copyrights,
+  trademarks, rights of privacy and publicity, trade secrets,
+  patents, or other proprietary or legal rights (e.g. musical
+  composition or performance rights, video rights, photography or
+  image rights, logo rights, third party data rights, etc. for
+  content and materials that may be included in Your Application);</p>
+</blockquote>
+
+<p>One can argue that Airfoil Speakers Touch is somehow &#8220;violating&#8221;, &#8220;misappropriating&#8221;, or &#8220;infringing&#8221; on Apple trademarks here. I would strongly disagree, and argue instead that Airfoil Speakers Touch was using these images very much appropriately. And note that the SDK agreement does not state you cannot &#8220;use&#8221; Apple trademarks.</p>
+
+<p>There&#8217;s also section 2.6:</p>
+
+<blockquote>
+  <p>This Agreement does not grant You any rights to use any
+  trademarks, logos or service marks belonging to Apple, including
+  but not limited to the iPhone or iPod word marks. If You make
+  reference to any Apple products or technology or use Apple’s
+  trademarks, You agree to comply with the published guidelines at
+  <a href="http://www.apple.com/legal/trademark/guidelinesfor3rdparties.html">http://www.apple.com/legal/trademark/guidelinesfor3rdparties.html</a>,
+  as modified by Apple from time to time.</p>
+</blockquote>
+
+<p>This clearly suggests that iPhone apps <em>can</em> make use of Apple trademarks, if they comply with the terms of Apple&#8217;s guidelines. I&#8217;ve read that document, too, and see no clause therein which would suggest that what Airfoil Speakers Touch was doing was in violation of the guidelines.</p>
+
+<p>In his write-up regarding the situation, Rogue Amoeba&#8217;s Paul Kafasis includes this bit from their App Store rejection notice:</p>
+
+<blockquote>
+  <p>Apple Logo and Apple-owned Graphic Symbols:</p>
+
+  <p>You may not use the Apple Logo or any other Apple-owned graphic
+  symbol, logo, or icon on or in connection with web sites,
+  products, packaging, manuals, promotional/advertising materials,
+  or for any other purpose except pursuant to an express written
+  trademark license from Apple, such as a reseller agreement.</p>
+</blockquote>
+
+<p>That&#8217;s less ambiguous. However, note that this language is not contained within the SDK agreement itself. The only way Rogue Amoeba got this language was by designing, building, and submitting the application that did it. (And this gets to LaMarche&#8217;s fourth point, wherein he claims the notice was &#8220;unambiguous&#8221;. It was not. It did not state where Rogue Amoeba had violated this rule. Was it the Mac icons? The app icons? Both? Rogue Amoeba was left to guess &#8212; and, when they asked for clarification, left to wait.)</p>
+
+<p>Is Apple within their rights to reject this app for this reason? Sure. The bottom line is that they can reject apps for whatever reasons they want &#8212; that&#8217;s the rule that matters here. But was Rogue Amoeba foolish for designing their application this way? No. There&#8217;s nothing in the SDK agreement that they&#8217;ve violated.</p>
+
+<p>It&#8217;s just good design. In UI design, just as in cinema, it is almost always better to <em>show</em> rather than <em>tell</em>. How else can you <em>show</em> which computer the Airfoil iPhone client is connected to? Apple certainly agrees with the design &#8212; showing an icon of the machine <a href="http://daringfireball.net/misc/2009/11/iphone-remote-app.png">is exactly how their own Remote app solves the same UI problem</a>. Obviously, the iPhone Remote app is Apple&#8217;s own app, so they can&#8217;t be accused of violating&thinsp;/&thinsp;misappropriating&thinsp;/&thinsp;infringing their own trademark. But if the de facto rule is &#8220;Apple can show a representation of the computer its iPhone apps connect to, but third-party developers can&#8217;t&#8221;, that doesn&#8217;t exactly refute Rogue Amoeba&#8217;s conclusion that developing for this platform just isn&#8217;t worth it.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2009-11-13">
+<p>I can&#8217;t link to the SDK agreement, as it resides behind the <a href="http://developer.apple.com/iphone/">iPhone Developer Portal</a>.&nbsp;<a href="#fnr1-2009-11-13"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+    ]]></content>
+  </entry></feed>

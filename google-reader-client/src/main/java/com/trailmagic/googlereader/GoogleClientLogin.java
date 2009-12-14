@@ -69,7 +69,7 @@ public class GoogleClientLogin {
                 case HttpStatus.SC_MOVED_TEMPORARILY:
                 case HttpStatus.SC_SEE_OTHER:
                     String authString = getSidString(responseBody);
-                    log.debug("Got successful SID string from ClientLogin");
+                    log.debug("Got successful SID string from ClientLogin (SID={})", authString);
                     return authString;
                 default:
                     log.error("Google ClientLogin returned an error status ([]).  Response: {}",
