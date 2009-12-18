@@ -7,7 +7,18 @@
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
     <context:component-scan base-package="com.trailmagic.googlereader"/>
 
-    <bean name="httpClient" class="org.apache.http.impl.client.DefaultHttpClient"/>
+    <bean name="schemeRegistry" class="org.apache.http.conn.scheme.SchemeRegistry"/>
+    <bean id="httpParams" class="org.apache.http.params.BasicHttpParams"/>
+
+    <bean name="httpClient" class="org.apache.http.impl.client.DefaultHttpClient">
+        <constructor-arg>
+            <bean class="org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager">
+                <constructor-arg ref="httpParams"/>
+                <constructor-arg ref="schemeRegistry"/>
+            </bean>
+        </constructor-arg>
+        <constructor-arg ref="httpParams"/>
+    </bean>
 
     <util:properties id="grprops" location="classpath:googlereader.properties"/>
 </beans>

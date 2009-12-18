@@ -1,6 +1,8 @@
 package com.trailmagic.googlereader;
 
+import com.trailmagic.googlereader.http.EntityContentProcessor;
 import com.trailmagic.googlereader.http.HttpFactory;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
@@ -27,9 +29,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -58,6 +62,7 @@ public class GoogleReaderClient {
     private String readerToken;
     private HttpFactory httpFactory;
     private GoogleReaderTokenClient tokenClient;
+    private Map<String, Date> seenFeeds = new HashMap<String, Date>();
 
     @Autowired
     public GoogleReaderClient(HttpClient httpClient, GoogleClientLogin clientLogin, HttpFactory httpFactory, GoogleReaderTokenClient tokenClient) {
@@ -98,33 +103,19 @@ public class GoogleReaderClient {
         HttpResponse response = httpClient.execute(get);
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        SubscriptionsResponse subscriptionsResponse = mapper.readValue(response.getEntity().getContent(), SubscriptionsResponse.class);
+        HttpEntity httpEntity = response.getEntity();
+        SubscriptionsResponse subscriptionsResponse = mapper.readValue(httpEntity.getContent(), SubscriptionsResponse.class);
+        consumeContent(response);
 
         for (Subscription subscription : subscriptionsResponse.getSubscriptions()) {
             log.info(subscription.getTitle());
         }
     }
 
-    public Map<String, String> getFeedArticleIds(String feedUrl) throws IOException, JDOMException {
-        HttpGet get = new HttpGet(FEED_BASE + feedUrl);
-        get.getParams().setParameter("output", "json");
-        log.debug("Fetching Google article ID mappings for feed: {}", feedUrl);
-        HttpResponse response = httpClient.execute(get);
-        log.debug("Got response for : {}, processing mappings", feedUrl);
-
-        Map<String, String> mappings = extractIdMapping(new InputStreamReader(response.getEntity().getContent()));
-        log.debug("Found {} mappings for feed: {}", mappings.size(), feedUrl);
-        originalToGoogleIdMap.putAll(mappings);
-        return mappings;
-    }
-
-    void addFeedMapping(String originalId, String googleId) {
-        originalToGoogleIdMap.put(originalId, googleId);
-    }
-
-    public void markArticleAsRead(String originalId) throws IOException {
+    public void markArticleAsRead(String originalId) {
         if (!originalToGoogleIdMap.containsKey(originalId)) {
             log.debug("Ignoring feed unknown to google: {}", originalId);
+            return;
         }
 
         String googleId = originalToGoogleIdMap.get(originalId);
@@ -138,18 +129,33 @@ public class GoogleReaderClient {
 
         post.setEntity(httpFactory.urlEncodedFormEntity(Arrays.asList(bodyParams)));
 
-        HttpResponse response = httpClient.execute(post);
-        if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
-            if (log.isDebugEnabled()) {
-                log.debug("Failed to set read status on article: {} (google id: {}); response body said: {}",
-                          new Object[]{originalId, googleId, EntityUtils.toString(response.getEntity())});
+        try {
+            HttpResponse response = httpClient.execute(post);
+            consumeContent(response);
+            if (response.getStatusLine().getStatusCode() != HttpStatus.SC_OK) {
+                if (log.isDebugEnabled()) {
+                    log.debug("Failed to set read status on article: {} (google id: {}); response body said: {}",
+                              new Object[]{originalId, googleId, EntityUtils.toString(response.getEntity())});
+                }
             }
+            if (log.isDebugEnabled()) {
+                log.debug("Set read status on article: {} (google id: {})", originalId, googleId);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void consumeContent(HttpResponse response) throws IOException {
+        HttpEntity httpEntity = response.getEntity();
+        if (httpEntity != null) {
+            httpEntity.consumeContent();
         }
     }
 
     @SuppressWarnings({"unchecked"})
     public void loadReadStatuses(int numArticles) throws IOException, JDOMException {
-        HttpGet get = httpFactory.get(RECENTLY_READ_URL+"?n=" + numArticles);
+        HttpGet get = httpFactory.get(RECENTLY_READ_URL + "?n=" + numArticles);
         HttpResponse response = httpClient.execute(get);
         if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
             SAXBuilder builder = new SAXBuilder();
@@ -165,11 +171,68 @@ public class GoogleReaderClient {
             log.warn("Failed to load read statuses. Response body said: {}",
                      EntityUtils.toString(response.getEntity()));
         }
+        consumeContent(response);
     }
 
     public boolean isRead(String originalId) {
         String googleId = originalToGoogleIdMap.get(originalId);
         return googleIdToReadStatusMap.containsKey(googleId) && googleIdToReadStatusMap.get(googleId);
+    }
+
+    public Map<String, String> getFeedArticleIds(final String feedUrl) throws IOException, JDOMException {
+        return processFeed(feedUrl, new EntityContentProcessor<Map<String, String>>() {
+            @Override
+            public Map<String, String> process(Reader content) throws Exception {
+                Map<String, String> mappings = extractIdMapping(content);
+                log.debug("Found {} mappings for feed: {}", mappings.size(), feedUrl);
+                return mappings;
+            }
+        });
+    }
+
+    public Map<String, String> fetchFeedArticleLinks(final String feedUrl) {
+        Map<String, String> mappings = processFeed(feedUrl, new GoogleReaderClient.FeedArticleLinksProcessor());
+        if (log.isDebugEnabled()) {
+            for (String key : mappings.keySet()) {
+                log.debug("Adding mapping: {} -> {}", key, mappings.get(key));
+            }
+        }
+        originalToGoogleIdMap.putAll(mappings);
+        seenFeeds.put(feedUrl, new Date());
+        return mappings;
+    }
+
+    public <T> T processFeed(String feedUrl, EntityContentProcessor<T> processor) {
+        HttpGet get = new HttpGet(FEED_BASE + feedUrl);
+        log.debug("Fetching Google feed: {}", feedUrl);
+        try {
+            HttpResponse response = httpClient.execute(get);
+
+            log.debug("Got response for feed: {}, processing content", feedUrl);
+            HttpEntity httpEntity = response.getEntity();
+            InputStream content = httpEntity.getContent();
+            try {
+                InputStreamReader contentReader = new InputStreamReader(content);
+                try {
+                    T result = processor.process(contentReader);
+                    log.debug("Finished processing content for feed: {}", feedUrl);
+                    return result;
+                } finally {
+                    contentReader.close();
+                }
+            } finally {
+                content.close();
+                consumeContent(response);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new FeedProcessingFailedException(feedUrl, e);
+        }
+    }
+
+    void addFeedMapping(String originalId, String googleId) {
+        originalToGoogleIdMap.put(originalId, googleId);
     }
 
     @SuppressWarnings({"unchecked"})
@@ -189,7 +252,7 @@ public class GoogleReaderClient {
         return mappings;
     }
 
-    private XPath atomXPath(String path) throws JDOMException {
+    private static XPath atomXPath(String path) throws JDOMException {
         XPath xPath = XPath.newInstance(path);
         xPath.addNamespace("a", "http://www.w3.org/2005/Atom");
         xPath.addNamespace("gr", "http://www.google.com/schemas/reader/atom/");
@@ -212,10 +275,42 @@ public class GoogleReaderClient {
 
             log.info("Found {} read statuses", client.googleIdToReadStatusMap.size());
 
+            Map<String, String> linkMap = client.fetchFeedArticleLinks("http://daringfireball.net/index.xml");
+            for (String orig : linkMap.keySet()) {
+                log.info("Found Mapping: {} : {}", orig, linkMap.get(orig));
+            }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         } catch (JDOMException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void processFeedIfNecessary(String feedUrl) {
+        if (!seenFeeds.containsKey(feedUrl)) {
+            fetchFeedArticleLinks(feedUrl);
+        }
+    }
+
+    static class FeedArticleLinksProcessor implements EntityContentProcessor<Map<String, String>> {
+        @SuppressWarnings({"unchecked"})
+        @Override
+        public Map<String, String> process(Reader content) throws Exception {
+            Map<String, String> mappings = new HashMap<String, String>();
+            SAXBuilder builder = new SAXBuilder();
+            Document doc = builder.build(content);
+
+            XPath xPath = atomXPath("//a:feed/a:entry");
+            for (Element entry : (List<Element>) xPath.selectNodes(doc)) {
+                Attribute linkAttr = (Attribute) atomXPath("a:link[@rel='alternate']/@href").selectSingleNode(entry);
+                Text googleId = (Text) atomXPath("a:id/text()").selectSingleNode(entry);
+                if (linkAttr != null && googleId != null) {
+                    mappings.put(linkAttr.getValue(), googleId.getText());
+                }
+            }
+            return mappings;
         }
     }
 }

@@ -54,6 +54,7 @@ public class GoogleReaderClientTest {
     private static final String READ_ARTICLE_ORIGINAL_ID = "tag:daringfireball.net,2009:/linked//6.18520";
     public static final String READER_TOKEN = "a3NqiiUBAAA.nd2QOvjmYxMXL1rd_t5LAw.kvfdwaucRm3nrVuWM7Ddyg";
     private static final String ARTICLE_ORIGINAL_ID = "tag:daringfireball.net,2009:/linked//6.18543";
+    private static final String TEST_FEED = "classpath:com/trailmagic/googlereader/testfeed.xml";
 
     @Before
     public void setUp() throws Exception {
@@ -77,7 +78,7 @@ public class GoogleReaderClientTest {
 
     @Test
     public void testExtractsIdsFromGoogleFeed() throws JDOMException, IOException {
-        String stringContent = loadContentFromResource("classpath:com/trailmagic/googlereader/testfeed.xml");
+        String stringContent = loadContentFromResource(TEST_FEED);
 
         SAXBuilder builder = new SAXBuilder();
         Document document = builder.build(new StringReader(stringContent));
@@ -129,5 +130,17 @@ public class GoogleReaderClientTest {
         client.loadReadStatuses(10);
 
         assertTrue(client.isRead(READ_ARTICLE_ORIGINAL_ID));
+    }
+
+    @Test
+    public void testFeedArticleLinksProcessor() throws Exception {
+        GoogleReaderClient.FeedArticleLinksProcessor processor = new GoogleReaderClient.FeedArticleLinksProcessor();
+        Map<String, String> map = processor.process(new StringReader(loadContentFromResource(TEST_FEED)));
+        System.out.println("map size: " + map.size());
+        assertEquals("tag:google.com,2005:reader/item/e994f511d3c6e533", map.get("http://rogerebert.suntimes.com/apps/pbcs.dll/article?AID=/20091211/REVIEWS/912119998"));
+    }
+
+    public void testLoadsFeedStatusesOnce() {
+        
     }
 }
