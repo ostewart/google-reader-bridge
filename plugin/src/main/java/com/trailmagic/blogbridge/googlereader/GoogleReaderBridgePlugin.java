@@ -2,7 +2,6 @@ package com.trailmagic.blogbridge.googlereader;
 
 import com.salas.bb.core.GlobalController;
 import com.salas.bb.plugins.domain.ICodePlugin;
-import com.trailmagic.googlereader.GoogleReaderClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
@@ -29,28 +28,17 @@ public class GoogleReaderBridgePlugin implements ICodePlugin {
     }
 
     public void initialize() {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:com/trailmagic/googlereader/applicationContext.xml");
-        GoogleReaderClient client = ctx.getBean("googleReaderClient", GoogleReaderClient.class);
+        log.info("Google Reader Bridge Plugin initializing");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:com/trailmagic/blogbridge/googlereader/applicationContext.xml");
 
         try {
-            client.init();
-            client.loadReadStatuses(1000);
-
-            Map<String, String> linkMap = client.fetchFeedArticleLinks("http://daringfireball.net/index.xml");
-            for (String orig : linkMap.keySet()) {
-                log.info("Found Mapping: {} : {}", orig, linkMap.get(orig));
-            }
-
-
-            GrbDomainAdapter adapter = new GrbDomainAdapter(client);
-            GrbControllerAdapter controllerAdapter = new GrbControllerAdapter(client);
             GlobalController globalController = GlobalController.SINGLETON;
-            globalController.addDomainListener(adapter);
-            globalController.addControllerListener(controllerAdapter);
+            globalController.addDomainListener(ctx.getBean("grbDomainAdapter", GrbDomainAdapter.class));
+            globalController.addControllerListener(ctx.getBean("grbControllerAdapter", GrbControllerAdapter.class));
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        log.info("Google Reader Bridge Plugin finished initialization");
     }
 }

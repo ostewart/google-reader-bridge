@@ -6,20 +6,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
                            http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
-    <context:component-scan base-package="com.trailmagic.googlereader"/>
+    <context:component-scan base-package="com.trailmagic.blogbridge.googlereader"/>
 
-    <bean name="schemeRegistry" class="org.apache.http.conn.scheme.SchemeRegistry"/>
-    <bean id="httpParams" class="org.apache.http.params.BasicHttpParams"/>
+    <import resource="classpath:com/trailmagic/googlereader/applicationContext.xml"/>
 
-    <bean name="httpClient" class="org.apache.http.impl.client.DefaultHttpClient" depends-on="schemeRegistryConfigurer">
-        <constructor-arg>
-            <bean class="org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager">
-                <constructor-arg ref="httpParams"/>
-                <constructor-arg ref="schemeRegistry"/>
-            </bean>
-        </constructor-arg>
-        <constructor-arg ref="httpParams"/>
-    </bean>
+    <task:annotation-driven executor="feedExecutor" scheduler="feedScheduler"/>
 
-    <util:properties id="grprops" location="classpath:googlereader.properties"/>
+    <task:executor id="feedExecutor" pool-size="5-10" queue-capacity="200"/>
+    <task:scheduler id="feedScheduler" pool-size="1"/>
 </beans>

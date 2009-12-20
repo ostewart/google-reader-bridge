@@ -41,8 +41,9 @@
       <option name="REPORT_PARAMETER_FOR_PUBLIC_METHODS" value="true" />
       <option name="INJECTION_ANNOS">
         <value>
-          <list size="1">
+          <list size="2">
             <item index="0" class="java.lang.String" itemvalue="org.mockito.Mock" />
+            <item index="1" class="java.lang.String" itemvalue="org.springframework.scheduling.annotation.Scheduled" />
           </list>
         </value>
       </option>

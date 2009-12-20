@@ -28,6 +28,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -50,8 +51,6 @@ public class GoogleReaderClient {
     private static final String READ_TAG = "user/-/state/com.google/read";
     private static final String RECENTLY_READ_URL =
             "http://www.google.com/reader/atom/user/-/state/com.google/read";
-//    private static final String UNREAD_COUNT_URL =
-//            "http://www.google.com/reader/api/0/unread-count";
     private static final String EDIT_READ_TAG_URL =
             "http://www.google.com/reader/api/0/edit-tag?client=greader-blogbridge-bridge/0.0.1-SNAPSHOT";
     private static final String FEED_BASE = "http://www.google.com/reader/atom/feed/";
@@ -72,6 +71,7 @@ public class GoogleReaderClient {
         this.tokenClient = tokenClient;
     }
 
+    @PostConstruct
     public void init() throws IOException {
         try {
             addGoogleCookie("SID", clientLogin.getSidToken());
@@ -154,24 +154,33 @@ public class GoogleReaderClient {
     }
 
     @SuppressWarnings({"unchecked"})
-    public void loadReadStatuses(int numArticles) throws IOException, JDOMException {
-        HttpGet get = httpFactory.get(RECENTLY_READ_URL + "?n=" + numArticles);
-        HttpResponse response = httpClient.execute(get);
-        if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-            SAXBuilder builder = new SAXBuilder();
-            Document doc = builder.build(response.getEntity().getContent());
-            XPath xPath = atomXPath("//a:feed/a:entry");
-            for (Element entry : (List<Element>) xPath.selectNodes(doc)) {
-                Text googleId = (Text) atomXPath("a:id/text()").selectSingleNode(entry);
-                if (googleId != null) {
-                    googleIdToReadStatusMap.put(googleId.getValue(), Boolean.TRUE);
+    public void loadReadStatuses(int numArticles) throws GoogleReaderCommunicationException {
+        int newUnreads = 0;
+        try {
+            HttpGet get = httpFactory.get(RECENTLY_READ_URL + "?n=" + numArticles);
+            HttpResponse response = httpClient.execute(get);
+            if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+                SAXBuilder builder = new SAXBuilder();
+                Document doc = builder.build(response.getEntity().getContent());
+                XPath xPath = atomXPath("//a:feed/a:entry");
+                for (Element entry : (List<Element>) xPath.selectNodes(doc)) {
+                    Text googleId = (Text) atomXPath("a:id/text()").selectSingleNode(entry);
+                    if (googleId != null && !googleIdToReadStatusMap.containsKey(googleId.getValue())) {
+                        googleIdToReadStatusMap.put(googleId.getValue(), Boolean.TRUE);
+                        newUnreads++;
+                    }
                 }
+            } else if (log.isWarnEnabled()) {
+                log.warn("Failed to load read statuses. Response body said: {}",
+                         EntityUtils.toString(response.getEntity()));
             }
-        } else if (log.isWarnEnabled()) {
-            log.warn("Failed to load read statuses. Response body said: {}",
-                     EntityUtils.toString(response.getEntity()));
+            consumeContent(response);
+            log.info("Loaded {} read articles from Google Reader", newUnreads);
+        } catch (IOException e) {
+            throw new GoogleReaderCommunicationException(e);
+        } catch (JDOMException e) {
+            throw new GoogleReaderCommunicationException(e);
         }
-        consumeContent(response);
     }
 
     public boolean isRead(String originalId) {
@@ -239,6 +248,7 @@ public class GoogleReaderClient {
     Map<String, String> extractIdMapping(Reader content) throws JDOMException, IOException {
         Map<String, String> mappings = new HashMap<String, String>();
         SAXBuilder builder = new SAXBuilder();
+        builder.setValidation(false);
         Document doc = builder.build(content);
 
         XPath xPath = atomXPath("//a:feed/a:entry");
@@ -300,6 +310,7 @@ public class GoogleReaderClient {
         public Map<String, String> process(Reader content) throws Exception {
             Map<String, String> mappings = new HashMap<String, String>();
             SAXBuilder builder = new SAXBuilder();
+            builder.setValidation(false);
             Document doc = builder.build(content);
 
             XPath xPath = atomXPath("//a:feed/a:entry");
