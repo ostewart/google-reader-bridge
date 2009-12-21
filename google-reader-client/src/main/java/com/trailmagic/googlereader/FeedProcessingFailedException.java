@@ -7,4 +7,8 @@ public class FeedProcessingFailedException extends RuntimeException {
     public FeedProcessingFailedException(String feedUrl, Exception e) {
         super(feedUrl, e);
     }
+
+    public FeedProcessingFailedException(String feedUrl, int statusCode) {
+        super("Loading " + feedUrl + " failed with HTTP " + statusCode);
+    }
 }

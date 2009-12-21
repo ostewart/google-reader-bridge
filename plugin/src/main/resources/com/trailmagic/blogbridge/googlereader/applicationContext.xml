@@ -12,6 +12,6 @@
 
     <task:annotation-driven executor="feedExecutor" scheduler="feedScheduler"/>
 
-    <task:executor id="feedExecutor" pool-size="5-10" queue-capacity="200"/>
+    <task:executor id="feedExecutor" pool-size="5-10" queue-capacity="500"/>
     <task:scheduler id="feedScheduler" pool-size="1"/>
 </beans>

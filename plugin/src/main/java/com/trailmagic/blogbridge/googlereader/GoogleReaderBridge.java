@@ -53,7 +53,7 @@ public class GoogleReaderBridge {
     public void retrieveAndUpdateArticleReadStatus(IFeed feed, IArticle article) {
         try {
             if (feed instanceof NetworkFeed) {
-                client.fetchFeedArticleLinks(feedLink(feed));
+                client.loadFeedArticleLinks(feedLink(feed));
             }
             if (client.isRead(article.getLink().toString())) {
                 logSetReadStatus(article);

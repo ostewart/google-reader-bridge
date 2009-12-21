@@ -8,12 +8,7 @@ import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.message.BasicNameValuePair;
-import org.jdom.Document;
 import org.jdom.JDOMException;
-import org.jdom.input.SAXBuilder;
-import org.jdom.xpath.XPath;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -24,13 +19,11 @@ import org.springframework.core.io.Resource;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Reader;
 import java.io.StringReader;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
 
 /**
@@ -38,8 +31,6 @@ import static org.mockito.Mockito.when;
  */
 public class GoogleReaderClientTest {
     private GoogleReaderClient client;
-    private Reader content;
-    private InputStream contentInputStream;
     @Mock private HttpClient httpClient;
     @Mock private GoogleClientLogin clientLogin;
     @Mock private HttpFactory httpFactory;
@@ -49,12 +40,15 @@ public class GoogleReaderClientTest {
     @Mock private StatusLine statusLine;
     @Mock private HttpGet get;
     @Mock private HttpEntity entity;
+    @Mock private GoogleFeedArticleLinksProcessor feedArticleLinksProcessor;
+    @Mock private GoogleFeedProcessor feedProcessor;
+    @Mock private GoogleReadStatusProcessor readStatusProcessor;
     private static final String ARTICLE_GOOGLE_ID = "tag:google.com,2005:reader/item/e5636a3f87610bd2";
     private static final String READ_ARTICLE_GOOGLE_ID = "tag:google.com,2005:reader/item/ebed01cf7178605b";
-    private static final String READ_ARTICLE_ORIGINAL_ID = "tag:daringfireball.net,2009:/linked//6.18520";
     public static final String READER_TOKEN = "a3NqiiUBAAA.nd2QOvjmYxMXL1rd_t5LAw.kvfdwaucRm3nrVuWM7Ddyg";
     private static final String ARTICLE_ORIGINAL_ID = "tag:daringfireball.net,2009:/linked//6.18543";
     private static final String TEST_FEED = "classpath:com/trailmagic/googlereader/testfeed.xml";
+    private static final String ARTICLE_LINK = "http://online.wsj.com/article/SB10001424052748703757404574592530591075444.html";
 
     @Before
     public void setUp() throws Exception {
@@ -62,85 +56,85 @@ public class GoogleReaderClientTest {
 
 
         when(tokenClient.getReaderToken()).thenReturn(READER_TOKEN);
-        client = new GoogleReaderClient(httpClient, clientLogin, httpFactory, tokenClient);
+        client = new GoogleReaderClient(clientLogin, tokenClient, feedArticleLinksProcessor, feedProcessor, readStatusProcessor);
     }
 
     private String loadContentFromResource(String location) throws IOException {
         DefaultResourceLoader resourceLoader = new DefaultResourceLoader();
         Resource resource = resourceLoader.getResource(location);
-        contentInputStream = resource.getInputStream();
+        InputStream contentInputStream = resource.getInputStream();
         contentInputStream.mark(Integer.MAX_VALUE);
         String stringContent = IOUtils.toString(contentInputStream);
         contentInputStream.reset();
-        content = new StringReader(stringContent);
         return stringContent;
     }
 
     @Test
-    public void testExtractsIdsFromGoogleFeed() throws JDOMException, IOException {
-        String stringContent = loadContentFromResource(TEST_FEED);
+    public void testLoadsFeedUrlMappings() throws Exception {
+        Map<String, String> testMappings = new HashMap<String, String>();
+        testMappings.put(ARTICLE_LINK, ARTICLE_GOOGLE_ID);
+        when(feedProcessor.processFeed(Mockito.anyString(), Mockito.any(GoogleFeedArticleLinksProcessor.class)))
+                .thenReturn(testMappings);
 
-        SAXBuilder builder = new SAXBuilder();
-        Document document = builder.build(new StringReader(stringContent));
+        Map<String, String> mappings = client.loadFeedArticleLinks("http://example.com/stuff.xml");
 
-        Map<String, String> mappings = client.extractIdMapping(content);
-        XPath xPath = XPath.newInstance("//a:feed/a:entry");
-        xPath.addNamespace("a", "http://www.w3.org/2005/Atom");
-        int numEntries = xPath.selectNodes(document).size();
-        assertEquals(numEntries, mappings.size());
+        assertEquals(ARTICLE_GOOGLE_ID, mappings.get(ARTICLE_LINK));
+        assertEquals(ARTICLE_GOOGLE_ID, client.googleUrl(ARTICLE_LINK));
+
+        assertEquals(1, mappings.size());
+    }
+
+
+    @Test
+    public void testComposesMarkReadRequest() throws IOException, UnsuccessfulLoginException {
+        client.addFeedMapping(ARTICLE_ORIGINAL_ID, ARTICLE_GOOGLE_ID);
+
+        when(tokenClient.getReaderToken()).thenReturn(READER_TOKEN);
+        client.init();
+
+        client.markArticleAsRead(ARTICLE_ORIGINAL_ID);
+
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("i", ARTICLE_GOOGLE_ID);
+        params.put("ac", "edit");
+        params.put("a", "user/-/state/com.google/read");
+        params.put("T", READER_TOKEN);
+
+        Mockito.verify(feedProcessor, Mockito.times(1)).post(Mockito.anyString(), Mockito.eq(params));
     }
 
     @Test
-    public void testComposesMarkReadRequest() throws IOException {
-        when(httpFactory.post(Mockito.anyString())).thenReturn(post);
-        when(httpClient.execute(Mockito.<HttpUriRequest>anyObject())).thenReturn(response);
-        when(response.getStatusLine()).thenReturn(statusLine);
-        when(statusLine.getStatusCode()).thenReturn(200);
-
-        client.addFeedMapping(ARTICLE_ORIGINAL_ID, ARTICLE_GOOGLE_ID);
-
-        client.init();
+    public void testDoesntMarkReadInGoogleWhenNoKeyMapping() throws IOException, UnsuccessfulLoginException {
         client.markArticleAsRead(ARTICLE_ORIGINAL_ID);
 
-        BasicNameValuePair[] bodyParams = new BasicNameValuePair[]{
-                new BasicNameValuePair("i", ARTICLE_GOOGLE_ID),
-                new BasicNameValuePair("ac", "edit"),
-                new BasicNameValuePair("a", "user/-/state/com.google/read"),
-                new BasicNameValuePair("T", READER_TOKEN)
-        };
-
-        Mockito.verify(httpFactory).urlEncodedFormEntity(Arrays.asList(bodyParams));
-        Mockito.verify(httpClient, Mockito.times(1)).execute(post);
-        Mockito.verify(statusLine, Mockito.times(1)).getStatusCode();
+        Mockito.verify(feedProcessor, Mockito.never()).post(Mockito.anyString(),
+                                                            Mockito.<Map<String, String>>anyObject());
     }
 
     @Test
     public void testLoadsAndReturnsReadStatus() throws IOException, JDOMException {
-        when(httpFactory.get(Mockito.anyString())).thenReturn(get);
-        when(httpClient.execute(Mockito.<HttpUriRequest>anyObject())).thenReturn(response);
-        when(response.getStatusLine()).thenReturn(statusLine);
-        when(statusLine.getStatusCode()).thenReturn(200);
-        when(response.getEntity()).thenReturn(entity);
+        Map<String, Boolean> mappings = new HashMap<String, Boolean>();
+        mappings.put(READ_ARTICLE_GOOGLE_ID, Boolean.TRUE);
 
-        loadContentFromResource("classpath:com/trailmagic/googlereader/googlereader-read.xml");
+        client.addFeedMapping(ARTICLE_LINK, READ_ARTICLE_GOOGLE_ID);
 
-
-        when(entity.getContent()).thenReturn(contentInputStream);
-        client.addFeedMapping(READ_ARTICLE_ORIGINAL_ID, READ_ARTICLE_GOOGLE_ID);
+        when(feedProcessor.processFeed(Mockito.endsWith("?n=10"), Mockito.eq(readStatusProcessor))).thenReturn(mappings);
         client.loadReadStatuses(10);
 
-        assertTrue(client.isRead(READ_ARTICLE_ORIGINAL_ID));
+        assertTrue(client.isRead(ARTICLE_LINK));
+        assertFalse(client.isRead("some nonexistent key"));
     }
 
     @Test
     public void testFeedArticleLinksProcessor() throws Exception {
-        GoogleReaderClient.FeedArticleLinksProcessor processor = new GoogleReaderClient.FeedArticleLinksProcessor();
+        GoogleFeedArticleLinksProcessor processor = new GoogleFeedArticleLinksProcessor();
         Map<String, String> map = processor.process(new StringReader(loadContentFromResource(TEST_FEED)));
         System.out.println("map size: " + map.size());
         assertEquals("tag:google.com,2005:reader/item/e994f511d3c6e533", map.get("http://rogerebert.suntimes.com/apps/pbcs.dll/article?AID=/20091211/REVIEWS/912119998"));
     }
 
     public void testLoadsFeedStatusesOnce() {
-        
+
     }
 }
