@@ -40,7 +40,7 @@ public class GoogleReaderBridge {
         }
     }
 
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(fixedRate = 300000)
     public void loadReadStatuses() {
         try {
             client.loadReadStatuses(100);
