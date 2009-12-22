@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -71,7 +73,7 @@ public class GoogleReaderClient {
     @SuppressWarnings({"unchecked"})
     public void loadReadStatuses(int numArticles) throws GoogleReaderCommunicationException {
         try {
-            Map<String,Boolean> newStatuses =
+            Map<String, Boolean> newStatuses =
                     feedProcessor.processFeed(RECENTLY_READ_URL + "?n=" + numArticles, readStatusProcessor);
             for (String googleId : newStatuses.keySet()) {
                 googleIdToReadStatusMap.put(googleId, newStatuses.get(googleId));
@@ -83,11 +85,20 @@ public class GoogleReaderClient {
     }
 
     public Map<String, String> loadFeedArticleLinks(final String feedUrl) {
-        Map<String, String> mappings = feedProcessor.processFeed(FEED_BASE + feedUrl, feedArticleLinksProcessor);
+        Map<String, String> mappings =
+                feedProcessor.processFeed(FEED_BASE + urlEncode(feedUrl), feedArticleLinksProcessor);
         logMappings(mappings);
         linkToGoogleIdMap.putAll(mappings);
         seenFeeds.put(feedUrl, new Date());
         return mappings;
+    }
+
+    private String urlEncode(String feedUrl) {
+        try {
+            return URLEncoder.encode(feedUrl, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new IllegalArgumentException("Unsupported encoding (UTF-8)");
+        }
     }
 
     private void logMappings(Map<String, String> mappings) {

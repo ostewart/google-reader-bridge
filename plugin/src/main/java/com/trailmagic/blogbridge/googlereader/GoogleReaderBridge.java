@@ -40,6 +40,15 @@ public class GoogleReaderBridge {
         }
     }
 
+    @Scheduled(fixedRate = 3600000)
+    public void refreshTokens() {
+        try {
+            client.init();
+        } catch (Exception e) {
+            log.warn("Failed to refresh tokens", e);
+        }
+    }
+
     @Scheduled(fixedRate = 300000)
     public void loadReadStatuses() {
         try {
@@ -73,13 +82,15 @@ public class GoogleReaderBridge {
     @Async
     public void updateGoogleReadStatus(IArticle article, Boolean newValue) {
         try {
-            client.processFeedIfNecessary(feedLink(article.getFeed()));
+            if (newValue) {
+                client.processFeedIfNecessary(feedLink(article.getFeed()));
 
 
-            String link = article.getLink().toString();
-            if (!client.isRead(link)) {
-                logPropertyChange(newValue, link);
-                client.markArticleAsRead(link);
+                String link = article.getLink().toString();
+                if (!client.isRead(link)) {
+                    logPropertyChange(newValue, link);
+                    client.markArticleAsRead(link);
+                }
             }
         } catch (Exception e) {
             log.warn("Error updating google read status", e);

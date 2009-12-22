@@ -21,7 +21,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -76,7 +75,7 @@ public class GoogleFeedProcessor {
         }
     }
 
-    public int post(String url, Map<String,String> bodyParams) {
+    public int post(String url, Map<String, String> bodyParams) {
         HttpPost post = httpFactory.post(url);
         post.setEntity(httpFactory.urlEncodedFormEntity(mapToNameValuePairList(bodyParams)));
 
