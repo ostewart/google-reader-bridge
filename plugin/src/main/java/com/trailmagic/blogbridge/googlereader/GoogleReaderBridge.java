@@ -62,7 +62,7 @@ public class GoogleReaderBridge {
     public void retrieveAndUpdateArticleReadStatus(IFeed feed, IArticle article) {
         try {
             if (feed instanceof NetworkFeed) {
-                client.loadFeedArticleLinks(feedLink(feed));
+                client.loadFeedArticleLinks(feedLink(feed), feed.getArticlesCount());
             }
             if (client.isRead(article.getLink().toString())) {
                 logSetReadStatus(article);
@@ -83,7 +83,8 @@ public class GoogleReaderBridge {
     public void updateGoogleReadStatus(IArticle article, Boolean newValue) {
         try {
             if (newValue) {
-                client.processFeedIfNecessary(feedLink(article.getFeed()));
+                IFeed feed = article.getFeed();
+                client.processFeedIfNecessary(feedLink(feed), feed.getArticlesCount());
 
 
                 String link = article.getLink().toString();
@@ -110,7 +111,7 @@ public class GoogleReaderBridge {
         try {
             URL xmlURL = feed.getXmlURL();
             if (xmlURL == null) return;
-            client.processFeedIfNecessary(xmlURL.toString());
+            client.processFeedIfNecessary(xmlURL.toString(), feed.getArticlesCount());
 
             for (IArticle article : feed.getArticles()) {
                 if (client.isRead(article.getLink().toString())) {

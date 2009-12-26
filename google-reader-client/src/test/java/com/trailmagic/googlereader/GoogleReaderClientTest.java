@@ -49,6 +49,8 @@ public class GoogleReaderClientTest {
     private static final String ARTICLE_ORIGINAL_ID = "tag:daringfireball.net,2009:/linked//6.18543";
     private static final String TEST_FEED = "classpath:com/trailmagic/googlereader/testfeed.xml";
     private static final String ARTICLE_LINK = "http://online.wsj.com/article/SB10001424052748703757404574592530591075444.html";
+    private static final String FEED_URL = "http://example.com/stuff.xml";
+    private static final String FEED_URL_ENCODED = "http%3A%2F%2Fexample.com%2Fstuff.xml";
 
     @Before
     public void setUp() throws Exception {
@@ -76,7 +78,9 @@ public class GoogleReaderClientTest {
         when(feedProcessor.processFeed(Mockito.anyString(), Mockito.any(GoogleFeedArticleLinksProcessor.class)))
                 .thenReturn(testMappings);
 
-        Map<String, String> mappings = client.loadFeedArticleLinks("http://example.com/stuff.xml");
+        Map<String, String> mappings = client.loadFeedArticleLinks(FEED_URL, 100);
+
+        Mockito.verify(feedProcessor).processFeed(Mockito.endsWith(FEED_URL_ENCODED + "?n=100"), Mockito.same(feedArticleLinksProcessor));
 
         assertEquals(ARTICLE_GOOGLE_ID, mappings.get(ARTICLE_LINK));
         assertEquals(ARTICLE_GOOGLE_ID, client.googleUrl(ARTICLE_LINK));

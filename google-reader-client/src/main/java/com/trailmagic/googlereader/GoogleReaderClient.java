@@ -84,9 +84,10 @@ public class GoogleReaderClient {
         }
     }
 
-    public Map<String, String> loadFeedArticleLinks(final String feedUrl) {
+    public Map<String, String> loadFeedArticleLinks(final String feedUrl, int articlesCount) {
         Map<String, String> mappings =
-                feedProcessor.processFeed(FEED_BASE + urlEncode(feedUrl), feedArticleLinksProcessor);
+                feedProcessor.processFeed(FEED_BASE + urlEncode(feedUrl) + "?n=" + articlesCount,
+                                          feedArticleLinksProcessor);
         logMappings(mappings);
         linkToGoogleIdMap.putAll(mappings);
         seenFeeds.put(feedUrl, new Date());
@@ -145,9 +146,9 @@ public class GoogleReaderClient {
         linkToGoogleIdMap.put(link, googleId);
     }
 
-    public void processFeedIfNecessary(String feedUrl) {
+    public void processFeedIfNecessary(String feedUrl, int numArticles) {
         if (!seenFeeds.containsKey(feedUrl)) {
-            loadFeedArticleLinks(feedUrl);
+            loadFeedArticleLinks(feedUrl, numArticles);
         }
     }
 
