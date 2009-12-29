@@ -1,5 +1,6 @@
 package com.trailmagic.googlereader;
 
+import com.trailmagic.googlereader.http.EntityContentProcessor;
 import com.trailmagic.googlereader.http.HttpFactory;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
@@ -24,6 +25,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.Assert.*;
+import static org.mockito.Matchers.anyString;
+import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.when;
 
 /**
@@ -51,6 +54,7 @@ public class GoogleReaderClientTest {
     private static final String ARTICLE_LINK = "http://online.wsj.com/article/SB10001424052748703757404574592530591075444.html";
     private static final String FEED_URL = "http://example.com/stuff.xml";
     private static final String FEED_URL_ENCODED = "http%3A%2F%2Fexample.com%2Fstuff.xml";
+    private static final String FEED_LINK = "http://daringfireball.net/index.xml";
 
     @Before
     public void setUp() throws Exception {
@@ -135,10 +139,20 @@ public class GoogleReaderClientTest {
         GoogleFeedArticleLinksProcessor processor = new GoogleFeedArticleLinksProcessor();
         Map<String, String> map = processor.process(new StringReader(loadContentFromResource(TEST_FEED)));
         System.out.println("map size: " + map.size());
-        assertEquals("tag:google.com,2005:reader/item/e994f511d3c6e533", map.get("http://rogerebert.suntimes.com/apps/pbcs.dll/article?AID=/20091211/REVIEWS/912119998"));
+        assertEquals("tag:google.com,2005:reader/item/e994f511d3c6e533",
+                     map.get("http://rogerebert.suntimes.com/apps/pbcs.dll/article?AID=/20091211/REVIEWS/912119998"));
     }
 
+    @Test
     public void testLoadsFeedStatusesOnce() {
+        when(feedProcessor.processFeed(anyString(), eq(feedArticleLinksProcessor)))
+                .thenReturn(new HashMap<String, String>());
+        client.loadFeedArticleLinksIfNecessary(FEED_LINK, 30);
+        client.loadFeedArticleLinksIfNecessary(FEED_LINK, 30);
+        client.loadFeedArticleLinksIfNecessary(FEED_LINK, 30);
+        client.loadFeedArticleLinksIfNecessary(FEED_LINK, 30);
 
+        Mockito.verify(feedProcessor, Mockito.times(1))
+                .processFeed(anyString(), Mockito.<EntityContentProcessor<Map<String, String>>>anyObject());
     }
 }
