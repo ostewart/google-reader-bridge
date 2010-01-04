@@ -11,6 +11,7 @@
     <modules>
         <module>google-reader-client</module>
         <module>plugin</module>
+        <module>blogbridge-bootstrap</module>
     </modules>
 
     <build>

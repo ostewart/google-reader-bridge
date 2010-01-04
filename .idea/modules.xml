@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/blogbridge-bootstrap/blogbridge-bootstrap.iml" filepath="$PROJECT_DIR$/blogbridge-bootstrap/blogbridge-bootstrap.iml" />
       <module fileurl="file://$PROJECT_DIR$/google-reader-bridge.iml" filepath="$PROJECT_DIR$/google-reader-bridge.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugin/google-reader-bridge-plugin.iml" filepath="$PROJECT_DIR$/plugin/google-reader-bridge-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/google-reader-client/google-reader-client.iml" filepath="$PROJECT_DIR$/google-reader-client/google-reader-client.iml" />
